@@ -3,5 +3,5 @@ curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install
 ```
 # Windows
 ```
-curl https://raw.githubusercontent.com/chubbyhippo/code-settings/main/settings.json -o ~/AppData/Roaming/Code/settings.json
+curl https://raw.githubusercontent.com/chubbyhippo/code-settings/main/settings.json -o ~/AppData/Roaming/Code/User/settings.json
 ```
