@@ -13,3 +13,5 @@ code --install-extension sonarsource.sonarlint-vscode
 code --install-extension vscjava.vscode-java-pack
 # javascript
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension xabikos.JavaScriptSnippets
+code --install-extension christian-kohler.npm-intellisense
