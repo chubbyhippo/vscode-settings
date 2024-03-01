@@ -16,3 +16,5 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension xabikos.JavaScriptSnippets
 code --install-extension christian-kohler.npm-intellisense
 code --install-extension christian-kohler.path-intellisense
+# react
+code --install-extension dsznajder.es7-react-js-snippets
