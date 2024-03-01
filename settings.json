@@ -60,5 +60,8 @@
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
-    "workbench.colorTheme": "Kimbie Dark"
+    "workbench.colorTheme": "Kimbie Dark",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
 }
