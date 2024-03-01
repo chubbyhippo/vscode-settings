@@ -15,3 +15,4 @@ code --install-extension vscjava.vscode-java-pack
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension xabikos.JavaScriptSnippets
 code --install-extension christian-kohler.npm-intellisense
+code --install-extension christian-kohler.path-intellisense
