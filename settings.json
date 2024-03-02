@@ -40,12 +40,13 @@
         },
         {
             "before": [
-                "K"
+                "<leader>",
+                "a",
+                "p"
             ],
             "commands": [
-                "lineBreakInsert"
-            ],
-            "silent": true
+                "workbench.view.explorer"
+            ]
         }
     ],
     "vim.leader": "<space>",
