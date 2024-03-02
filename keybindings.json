@@ -148,10 +148,6 @@
     "key": "ctrl+[Tab]"
   },
   {
-    "command": "git.openChange",
-    "key": "ctrl+d"
-  },
-  {
     "command": "editor.action.goToDeclaration",
     "key": "f4",
     "when": "editorTextFocus"
@@ -200,11 +196,6 @@
     "command": "deleteWordLeft",
     "key": "ctrl+[Backspace]",
     "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "command": "editor.action.copyLinesDownAction",
-    "key": "ctrl+d",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "command": "editor.action.joinLines",
@@ -1019,10 +1010,6 @@
   {
     "command": "-editor.action.selectHighlights",
     "key": "ctrl+shift+l"
-  },
-  {
-    "command": "-editor.action.addSelectionToNextFindMatch",
-    "key": "ctrl+d"
   },
   {
     "command": "-workbench.action.showErrorsWarnings",
