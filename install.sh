@@ -7,7 +7,7 @@ case $(uname) in
         destination="$HOME/.config/Code/User/settings.json"
         ;;
     "Darwin")
-        destination="$HOME/Library/Application\ Support/Code/User/settings.json"
+        destination="$HOME/Library/Application Support/Code/User/settings.json"
         ;;
     "MINGW"*)
         destination="$HOME/AppData/Roaming/Code/User/settings.json"
@@ -25,4 +25,4 @@ elif [ "$(command -v wget)" ]; then
 fi
 
 # install extensions
-curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install-extensions.sh | /usr/bin/env sh
+#curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install-extensions.sh | /usr/bin/env sh
