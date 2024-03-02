@@ -491,11 +491,6 @@
     "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
   },
   {
-    "command": "editor.action.triggerParameterHints",
-    "key": "ctrl+p",
-    "when": "editorHasSignatureHelpProvider && editorTextFocus"
-  },
-  {
     "command": "workbench.action.compareEditor.previousChange",
     "key": "shift+f7",
     "when": "textCompareEditorVisible"
@@ -902,10 +897,6 @@
   {
     "command": "-workbench.action.showAllSymbols",
     "key": "ctrl+t"
-  },
-  {
-    "command": "-workbench.action.quickOpen",
-    "key": "ctrl+p"
   },
   {
     "command": "-workbench.action.quickOpen",
