@@ -2,7 +2,6 @@
 
 # keybindings
 code --install-extension vscodevim.vim
-code --install-extension k--kato.intellij-idea-keybindings
 # git
 code --install-extension eamodio.gitlens
 # powershell
