@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+# identify destination
 destination=""
 case $(uname) in
     "Linux")
@@ -15,7 +16,7 @@ case $(uname) in
         echo "Unknown Operating System"
         ;;
 esac
-
+# install settings.json
 echo "$destination"
 if [ "$(command -v curl)" ]; then
     curl https://raw.githubusercontent.com/chubbyhippo/code-settings/main/settings.json -o "$destination"
