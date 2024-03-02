@@ -25,4 +25,4 @@ elif [ "$(command -v wget)" ]; then
 fi
 
 # install extensions
-#curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install-extensions.sh | /usr/bin/env sh
+curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install-extensions.sh | /usr/bin/env sh
