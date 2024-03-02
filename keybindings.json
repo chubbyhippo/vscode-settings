@@ -14,32 +14,16 @@
     "key": "ctrl+c"
   },
   {
-    "command": "editor.action.clipboardCopyAction",
-    "key": "ctrl+[Insert]"
-  },
-  {
     "command": "editor.action.clipboardCutAction",
     "key": "ctrl+x"
-  },
-  {
-    "command": "editor.action.clipboardCutAction",
-    "key": "shift+[Delete]"
   },
   {
     "command": "editor.action.clipboardPasteAction",
     "key": "ctrl+v"
   },
   {
-    "command": "editor.action.clipboardPasteAction",
-    "key": "shift+[Insert]"
-  },
-  {
     "command": "redo",
     "key": "shift+ctrl+z"
-  },
-  {
-    "command": "redo",
-    "key": "shift+alt+[Backspace]"
   },
   {
     "command": "undo",
