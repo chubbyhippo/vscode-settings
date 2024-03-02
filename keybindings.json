@@ -453,10 +453,6 @@
     "key": "shift+ctrl+a"
   },
   {
-    "command": "workbench.action.showAllSymbols",
-    "key": "ctrl+n"
-  },
-  {
     "command": "workbench.action.quickOpen",
     "key": "shift+ctrl+n"
   },
@@ -915,10 +911,6 @@
   {
     "command": "-workbench.action.navigateForward",
     "key": "ctrl+shift+[Minus]"
-  },
-  {
-    "command": "-workbench.action.files.newUntitledFile",
-    "key": "ctrl+n"
   },
   {
     "command": "-git.pushTo",
