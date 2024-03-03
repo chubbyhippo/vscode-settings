@@ -22,6 +22,30 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
+        "n"
+      ],
+      "after": [
+        "n",
+        "z",
+        "z",
+        "z",
+        "v"
+      ]
+    },
+    {
+      "before": [
+        "N"
+      ],
+      "after": [
+        "N",
+        "z",
+        "z",
+        "z",
+        "v"
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         "a",
         "p"
