@@ -914,10 +914,6 @@
     "key": ""
   },
   {
-    "command": "-editor.action.selectHighlights",
-    "key": "ctrl+shift+l"
-  },
-  {
     "command": "-workbench.action.showErrorsWarnings",
     "key": ""
   },
