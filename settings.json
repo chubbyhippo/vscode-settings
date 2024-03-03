@@ -51,6 +51,17 @@
     {
       "before": [
         "<leader>",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.togglePanel",
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.action.focusActiveEditorGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "r",
         "e"
       ],
