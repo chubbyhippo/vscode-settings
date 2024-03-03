@@ -54,9 +54,8 @@
         "h"
       ],
       "commands": [
-        "workbench.action.togglePanel",
-        "workbench.action.toggleSidebarVisibility",
-        "workbench.action.focusActiveEditorGroup"
+        "workbench.action.closeSidebar",
+        "workbench.action.closePanel"
       ]
     },
     {
