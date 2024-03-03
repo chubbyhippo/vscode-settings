@@ -102,6 +102,14 @@
     },
     {
       "before": [
+        "<c-s-l>"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToRightGroup"
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         "a",
         "p"
