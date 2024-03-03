@@ -103,7 +103,6 @@
     "<C-e>": false,
     "<C-f>": false,
     "<C-v>": false,
-    "<C-w>": false,
     "<C-x>": false
   },
   "extensions.experimental.affinity": {
