@@ -283,11 +283,6 @@
     "when": "textInputFocus"
   },
   {
-    "command": "editor.action.smartSelect.grow",
-    "key": "ctrl+w",
-    "when": "editorTextFocus"
-  },
-  {
     "command": "lineBreakInsert",
     "key": "ctrl+[Enter]",
     "when": "textInputFocus && !editorReadonly"
@@ -315,11 +310,6 @@
   {
     "command": "editor.action.toggleColumnSelection",
     "key": "shift+alt+[Insert]"
-  },
-  {
-    "command": "editor.action.smartSelect.shrink",
-    "key": "shift+ctrl+w",
-    "when": "editorTextFocus"
   },
   {
     "command": "editor.debug.action.selectionToRepl",
@@ -677,10 +667,6 @@
   {
     "command": "-git.commitAll",
     "key": ""
-  },
-  {
-    "command": "-workbench.action.closeActiveEditor",
-    "key": "ctrl+w"
   },
   {
     "command": "-editor.action.triggerSuggest",
