@@ -47,11 +47,6 @@
     "when": "editorHasCallHierarchyProvider"
   },
   {
-    "command": "git.commitAll",
-    "key": "ctrl+k",
-    "when": "!inDebugMode && !terminalFocus"
-  },
-  {
     "command": "workbench.view.debug",
     "key": "shift+alt+f9"
   },
@@ -196,11 +191,6 @@
     "command": "deleteWordLeft",
     "key": "ctrl+[Backspace]",
     "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "command": "editor.action.joinLines",
-    "key": "shift+ctrl+j",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "command": "cursorLineEnd",
@@ -366,16 +356,6 @@
     "when": "editorFocus && findInputFocussed"
   },
   {
-    "command": "editor.action.nextMatchFindAction",
-    "key": "ctrl+l",
-    "when": "editorFocus"
-  },
-  {
-    "command": "editor.action.nextMatchFindAction",
-    "key": "ctrl+l",
-    "when": "editorFocus && findInputFocussed"
-  },
-  {
     "command": "editor.action.previousMatchFindAction",
     "key": "shift+f3",
     "when": "editorFocus"
@@ -383,16 +363,6 @@
   {
     "command": "editor.action.previousMatchFindAction",
     "key": "shift+f3",
-    "when": "editorFocus && findInputFocussed"
-  },
-  {
-    "command": "editor.action.previousMatchFindAction",
-    "key": "shift+ctrl+l",
-    "when": "editorFocus"
-  },
-  {
-    "command": "editor.action.previousMatchFindAction",
-    "key": "shift+ctrl+l",
     "when": "editorFocus && findInputFocussed"
   },
   {
@@ -612,11 +582,6 @@
     "when": "debuggersAvailable && editorTextFocus"
   },
   {
-    "command": "java.action.showTypeHierarchy",
-    "key": "ctrl+h",
-    "when": "editorLangId == java && editorTextFocus"
-  },
-  {
     "command": "cursorUndo",
     "key": "shift+alt+j",
     "when": "textInputFocus"
@@ -673,16 +638,8 @@
     "key": "ctrl+i"
   },
   {
-    "command": "-editor.foldAll",
-    "key": "ctrl+k ctrl+[Digit0]"
-  },
-  {
     "command": "-editor.fold",
     "key": "ctrl+shift+["
-  },
-  {
-    "command": "-editor.foldRecursively",
-    "key": "ctrl+k ctrl+["
   },
   {
     "command": "-editor.action.blockComment",
@@ -719,10 +676,6 @@
   {
     "command": "-editor.action.goToDeclaration",
     "key": ""
-  },
-  {
-    "command": "-workbench.action.files.showOpenedFileInNewWindow",
-    "key": "ctrl+k o"
   },
   {
     "command": "-acceptSelectedSuggestion",
@@ -829,16 +782,8 @@
     "key": ""
   },
   {
-    "command": "-editor.unfoldAll",
-    "key": "ctrl+k ctrl+j"
-  },
-  {
     "command": "-editor.unfold",
     "key": "ctrl+shift+]"
-  },
-  {
-    "command": "-editor.unfoldRecursively",
-    "key": "ctrl+k ctrl+]"
   },
   {
     "command": "-workbench.action.gotoSymbol",
@@ -913,10 +858,6 @@
     "key": ""
   },
   {
-    "command": "-workbench.action.navigateToLastEditLocation",
-    "key": "ctrl+k ctrl+q"
-  },
-  {
     "command": "-workbench.action.compareEditor.nextChange",
     "key": "alt+[F5]"
   },
@@ -941,16 +882,8 @@
     "key": "ctrl+[PageUp]"
   },
   {
-    "command": "-workbench.action.selectTheme",
-    "key": "ctrl+k ctrl+t"
-  },
-  {
     "command": "-editor.action.previewDeclaration",
     "key": ""
-  },
-  {
-    "command": "-editor.action.showHover",
-    "key": "ctrl+k ctrl+i"
   },
   {
     "command": "-editor.action.formatDocument",
@@ -959,10 +892,6 @@
   {
     "command": "-editor.action.rename",
     "key": "f2"
-  },
-  {
-    "command": "-editor.action.startFindReplaceAction",
-    "key": "ctrl+h"
   },
   {
     "command": "-workbench.action.replaceInFiles",
@@ -1035,10 +964,6 @@
   {
     "command": "-cursorUndo",
     "key": "ctrl+u"
-  },
-  {
-    "command": "-git.revertSelectedRanges",
-    "key": "ctrl+k ctrl+r"
   },
   {
     "command": "-git.sync",
