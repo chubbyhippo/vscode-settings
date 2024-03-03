@@ -54,10 +54,12 @@
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
+    "<C-b>": false,
     "<C-c>": false,
     "<C-e>": false,
     "<C-f>": false,
     "<C-v>": false,
+    "<C-w>": false,
     "<C-x>": false
   },
   "extensions.experimental.affinity": {
