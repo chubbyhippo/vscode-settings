@@ -2,6 +2,7 @@
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "files.autoSave": "afterDelay",
+  "telemetry.telemetryLevel": "off",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
