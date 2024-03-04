@@ -115,6 +115,16 @@
       "before": [
         "<leader>",
         "a",
+        "d"
+      ],
+      "commands": [
+        "workbench.view.debug"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
         "p"
       ],
       "commands": [
