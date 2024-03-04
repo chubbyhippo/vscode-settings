@@ -104,6 +104,16 @@
       "before": [
         "<leader>",
         "a",
+        "c"
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
         "p"
       ],
       "commands": [
