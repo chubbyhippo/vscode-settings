@@ -1,17 +1,17 @@
 [
   {
-    "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
+    "key": "escape",
     "when": "!editorTextFocus"
   },
   {
-    "key": "alt+enter",
     "command": "editor.action.quickFix",
+    "key": "alt+enter",
     "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+b",
     "command": "editor.action.revealDefinition",
+    "key": "ctrl+b",
     "when": "editorHasDefinitionProvider && editorTextFocus"
   },
   {
@@ -963,10 +963,6 @@
     "key": "ctrl+u"
   },
   {
-    "command": "-git.sync",
-    "key": ""
-  },
-  {
     "command": "-editor.action.dirtydiff.next",
     "key": "alt+[F3]"
   },
@@ -975,19 +971,19 @@
     "key": "shift+alt+[F3]"
   },
   {
-    "key": "ctrl+shift+l",
-    "command": "workbench.action.moveEditorToRightGroup"
+    "command": "workbench.action.moveEditorToRightGroup",
+    "key": "ctrl+shift+l"
   },
   {
-    "key": "ctrl+shift+h",
-    "command": "workbench.action.moveEditorToLeftGroup"
+    "command": "workbench.action.moveEditorToLeftGroup",
+    "key": "ctrl+shift+h"
   },
   {
-    "key": "ctrl+shift+k",
-    "command": "workbench.action.moveEditorToAboveGroup"
+    "command": "workbench.action.moveEditorToAboveGroup",
+    "key": "ctrl+shift+k"
   },
   {
-    "key": "ctrl+shift+j",
-    "command": "workbench.action.moveEditorToBelowGroup"
+    "command": "workbench.action.moveEditorToBelowGroup",
+    "key": "ctrl+shift+j"
   }
 ]
