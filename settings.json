@@ -160,6 +160,15 @@
       "commands": [
         "editor.action.refactor"
       ]
+    },
+    {
+      "before": [
+        "<Tab>"
+      ],
+      "after": [
+        "g",
+        "t"
+      ]
     }
   ],
   "vim.leader": "<space>",
