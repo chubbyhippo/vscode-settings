@@ -123,6 +123,16 @@
     {
       "before": [
         "<leader>",
+        "a",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "h"
       ],
       "commands": [
