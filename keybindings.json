@@ -10,6 +10,11 @@
     "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   },
   {
+    "key": "ctrl+b",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus"
+  },
+  {
     "command": "editor.action.clipboardCopyAction",
     "key": "ctrl+c"
   },
@@ -848,10 +853,6 @@
   {
     "command": "-editor.action.goToTypeDefinition",
     "key": ""
-  },
-  {
-    "command": "-workbench.action.toggleSidebarVisibility",
-    "key": "ctrl+b"
   },
   {
     "command": "-workbench.action.maximizeEditor",
