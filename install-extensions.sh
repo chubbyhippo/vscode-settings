@@ -6,6 +6,9 @@ code --install-extension vscodevim.vim
 code --install-extension eamodio.gitlens
 # static code analysis
 code --install-extension sonarsource.sonarlint-vscode
+# java
+code --install-extension vscjava.vscode-gradle
+code --install-extension vscjava.vscode-java-pack
 # javascript
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension xabikos.JavaScriptSnippets
