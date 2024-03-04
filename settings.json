@@ -169,6 +169,15 @@
         "g",
         "t"
       ]
+    },
+    {
+      "before": [
+        "<s-Tab>"
+      ],
+      "after": [
+        "g",
+        "T"
+      ]
     }
   ],
   "vim.leader": "<space>",
