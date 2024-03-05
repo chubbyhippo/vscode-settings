@@ -12,6 +12,16 @@
   "vim.insertModeKeyBindings": [
     {
       "before": [
+        "s"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "s"
+      ]
+    },
+    {
+      "before": [
         "j",
         "j"
       ],
