@@ -17,5 +17,5 @@ code --list-extensions | foreach { code --uninstall-extension $_ }
 ```
 ## sh
 ```
-code --list-extensions | xargs -L 1 code --uninstall-extension
+code --list-extensions | xargs -L 1 code --uninstall-extension;code --list-extensions | xargs -L 1 code --uninstall-extension
 ```
