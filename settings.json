@@ -12,16 +12,6 @@
   "vim.insertModeKeyBindings": [
     {
       "before": [
-        "s"
-      ],
-      "after": [
-        "leader",
-        "leader",
-        "s"
-      ]
-    },
-    {
-      "before": [
         "j",
         "j"
       ],
@@ -31,6 +21,16 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "s"
+      ]
+    },
     {
       "before": [
         "n"
