@@ -17,3 +17,5 @@ code --install-extension christian-kohler.npm-intellisense
 code --install-extension christian-kohler.path-intellisense
 # react
 code --install-extension dsznajder.es7-react-js-snippets
+# spring
+code --install-extension vmware.vscode-boot-dev-pack
