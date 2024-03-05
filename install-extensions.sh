@@ -6,6 +6,7 @@ code --install-extension vscodevim.vim
 code --install-extension eamodio.gitlens
 # static code analysis
 code --install-extension sonarsource.sonarlint-vscode
+code --install-extension redhat.fabric8-analytics
 # java
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-gradle
