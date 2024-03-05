@@ -7,7 +7,7 @@
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
+  "vim.hlsearch": false,
   "vim.smartRelativeLine": true,
   "vim.insertModeKeyBindings": [
     {
