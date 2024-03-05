@@ -209,6 +209,15 @@
     },
     {
       "before": [
+        "<leader>",
+        "<leader>"
+      ],
+      "after": [
+        "<c-^>"
+      ]
+    },
+    {
+      "before": [
         "<Tab>"
       ],
       "after": [
