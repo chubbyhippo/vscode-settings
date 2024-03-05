@@ -244,5 +244,6 @@
     "javascript": "javascriptreact"
   },
   "java.compile.nullAnalysis.nonnull": [],
-  "java.compile.nullAnalysis.nullable": []
+  "java.compile.nullAnalysis.nullable": [],
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml"
 }
