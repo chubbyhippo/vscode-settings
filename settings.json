@@ -232,5 +232,7 @@
   "workbench.colorTheme": "Kimbie Dark",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-  }
+  },
+  "java.compile.nullAnalysis.nonnull": [],
+  "java.compile.nullAnalysis.nullable": []
 }
