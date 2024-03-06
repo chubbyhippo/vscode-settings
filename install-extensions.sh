@@ -7,8 +7,8 @@ code --install-extension eamodio.gitlens
 # static code analysis
 code --install-extension sonarsource.sonarlint-vscode
 code --install-extension redhat.fabric8-analytics
-# container
-code --install-extension ms-vscode-remote.remote-containers
+# docker
+code --install-extension ms-azuretools.vscode-docker
 # java
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-gradle
