@@ -990,5 +990,10 @@
   {
     "command": "workbench.action.moveEditorToBelowGroup",
     "key": "ctrl+shift+j"
+  },
+  {
+    "key": "enter",
+    "command": "-java.view.package.renameFile",
+    "when": "focusedView == 'javaProjectExplorer' && java:serverMode == 'Standard'"
   }
 ]
