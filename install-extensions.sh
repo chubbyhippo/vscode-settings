@@ -32,3 +32,5 @@ code --install-extension christian-kohler.path-intellisense
 code --install-extension dsznajder.es7-react-js-snippets
 # golang
 code --install-extension golang.go
+# rust
+code --install-extension rust-lang.rust-analyzer
