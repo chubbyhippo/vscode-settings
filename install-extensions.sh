@@ -22,3 +22,5 @@ code --install-extension christian-kohler.npm-intellisense
 code --install-extension christian-kohler.path-intellisense
 # react
 code --install-extension dsznajder.es7-react-js-snippets
+# golang
+code --install-extension golang.go
