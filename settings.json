@@ -210,6 +210,17 @@
     {
       "before": [
         "<leader>",
+        "r",
+        "r"
+      ],
+      "commands": [
+        "java.debug.runJavaFile"
+      ],
+      "when": "resourceExtname == .java"
+    },
+    {
+      "before": [
+        "<leader>",
         "<leader>"
       ],
       "after": [
