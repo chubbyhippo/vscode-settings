@@ -510,6 +510,13 @@
   },
   {
     "command": "editor.action.codeAction",
+    "key": "ctrl+alt+f",
+    "args": {
+      "kind": "refactor.extract.field"
+    }
+  },
+  {
+    "command": "editor.action.codeAction",
     "key": "ctrl+alt+m",
     "args": {
       "kind": "refactor.extract.function"
