@@ -502,6 +502,13 @@
     "when": "editorFocus || editorIsOpen"
   },
   {
+    "command": "editor.action.codeAction",
+    "key": "ctrl+alt+m",
+    "args": {
+      "kind": "refactor.extract.function"
+    }
+  },
+  {
     "command": "workbench.action.replaceInFiles",
     "key": "shift+ctrl+r"
   },
