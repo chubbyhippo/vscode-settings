@@ -10,7 +10,6 @@ code --install-extension redhat.fabric8-analytics
 # docker
 code --install-extension ms-azuretools.vscode-docker
 # java
-code --install-extension vscjava.vscode-java-pack
 code --install-extension redhat.java
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-maven
