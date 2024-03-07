@@ -13,7 +13,7 @@ irm https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install.ps1
 # uninstall extensions
 ## powershell
 ```
-code --list-extensions | foreach { code --uninstall-extension $_ }
+code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
 ```
 ## sh
 ```
