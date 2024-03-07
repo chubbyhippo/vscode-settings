@@ -503,6 +503,13 @@
   },
   {
     "command": "editor.action.codeAction",
+    "key": "ctrl+alt+c",
+    "args": {
+      "kind": "refactor.extract.constant"
+    }
+  },
+  {
+    "command": "editor.action.codeAction",
     "key": "ctrl+alt+m",
     "args": {
       "kind": "refactor.extract.function"
