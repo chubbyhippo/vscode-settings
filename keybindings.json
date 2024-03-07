@@ -509,6 +509,13 @@
     }
   },
   {
+    "command": "editor.action.codeAction",
+    "key": "ctrl+alt+v",
+    "args": {
+      "kind": "refactor.extract.variable"
+    }
+  },
+  {
     "command": "workbench.action.replaceInFiles",
     "key": "shift+ctrl+r"
   },
