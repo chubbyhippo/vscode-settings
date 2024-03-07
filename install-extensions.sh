@@ -14,9 +14,7 @@ code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-gradle
 code --install-extension vscjava.vscode-lombok
 # spring
-code --install-extension vscjava.vscode-spring-initializr
-code --install-extension vmware.vscode-spring-boot
-code --install-extension vscjava.vscode-spring-boot-dashboard
+code --install-extension vmware.vscode-boot-dev-pack
 # javascript
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension xabikos.JavaScriptSnippets
