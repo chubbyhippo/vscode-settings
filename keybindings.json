@@ -483,14 +483,8 @@
     "when": "editorTextFocus"
   },
   {
-    "command": "workbench.action.openRecent",
-    "key": "ctrl+e",
-    "when": "!inQuickOpen"
-  },
-  {
     "command": "workbench.action.openPreviousEditorFromHistory",
-    "key": "ctrl+e",
-    "when": "inQuickOpen"
+    "key": "ctrl+e"
   },
   {
     "command": "editor.action.formatDocument",
