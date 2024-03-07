@@ -510,6 +510,13 @@
   },
   {
     "command": "editor.action.codeAction",
+    "key": "ctrl+alt+n",
+    "args": {
+      "kind": "refactor.inline"
+    }
+  },
+  {
+    "command": "editor.action.codeAction",
     "key": "ctrl+alt+v",
     "args": {
       "kind": "refactor.extract.variable"
