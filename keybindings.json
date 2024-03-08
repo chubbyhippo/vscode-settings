@@ -52,6 +52,16 @@
     "key": "shift+alt+[ArrowLeft]"
   },
   {
+    "command": "java.test.goToTest",
+    "key": "ctrl+shift+t",
+    "when": "resourceExtname == .java"
+  },
+  {
+    "command": "java.test.goToTestSubject",
+    "key": "ctrl+shift+t",
+    "when": "resourceExtname == .java && resourceFilename =~ /Test/"
+  },
+  {
     "command": "references-view.showCallHierarchy",
     "key": "ctrl+alt+h",
     "when": "editorHasCallHierarchyProvider"
