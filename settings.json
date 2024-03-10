@@ -191,6 +191,16 @@
       "before": [
         "<leader>",
         "a",
+        "g"
+      ],
+      "commands": [
+        "gradleDefaultProjectsView.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
         "m"
       ],
       "commands": [
