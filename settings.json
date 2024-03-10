@@ -211,6 +211,16 @@
       "before": [
         "<leader>",
         "a",
+        "s"
+      ],
+      "commands": [
+        "outline.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
         "t"
       ],
       "commands": [
