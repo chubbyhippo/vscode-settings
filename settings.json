@@ -191,6 +191,16 @@
       "before": [
         "<leader>",
         "a",
+        "m"
+      ],
+      "commands": [
+        "mavenProjects.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
         "p"
       ],
       "commands": [
