@@ -399,6 +399,10 @@
     "key": "alt+[Insert]"
   },
   {
+    "key": "alt+7",
+    "command": "outline.focus"
+  },
+  {
     "command": "git.pushTo",
     "key": "ctrl+alt+k",
     "when": "!inDebugMode && !terminalFocus"
