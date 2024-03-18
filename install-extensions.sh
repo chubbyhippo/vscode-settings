@@ -13,6 +13,8 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-gradle
 code --install-extension vscjava.vscode-lombok
+# quarkus
+rcode --install-extension edhat.vscode-quarkus
 # spring
 code --install-extension vmware.vscode-boot-dev-pack
 # javascript
