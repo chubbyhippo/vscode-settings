@@ -1,30 +1,30 @@
 #!/bin/sh
 
 # keybindings
-code --install-extension vscodevim.vim
+code --force --install-extension vscodevim.vim
 # git
-code --install-extension eamodio.gitlens
+code --force --install-extension eamodio.gitlens
 # static code analysis
-code --install-extension sonarsource.sonarlint-vscode
-code --install-extension redhat.fabric8-analytics
+code --force --install-extension sonarsource.sonarlint-vscode
+code --force --install-extension redhat.fabric8-analytics
 # docker
-code --install-extension ms-azuretools.vscode-docker
+code --force --install-extension ms-azuretools.vscode-docker
 # java
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vscjava.vscode-gradle
-code --install-extension vscjava.vscode-lombok
+code --force --install-extension vscjava.vscode-java-pack
+code --force --install-extension vscjava.vscode-gradle
+code --force --install-extension vscjava.vscode-lombok
 # quarkus
-code --install-extension redhat.vscode-quarkus
+code --force --install-extension redhat.vscode-quarkus
 # spring
-code --install-extension vmware.vscode-boot-dev-pack
+code --force --install-extension vmware.vscode-boot-dev-pack
 # javascript
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension xabikos.JavaScriptSnippets
-code --install-extension christian-kohler.npm-intellisense
-code --install-extension christian-kohler.path-intellisense
+code --force --install-extension dbaeumer.vscode-eslint
+code --force --install-extension xabikos.JavaScriptSnippets
+code --force --install-extension christian-kohler.npm-intellisense
+code --force --install-extension christian-kohler.path-intellisense
 # react
-code --install-extension dsznajder.es7-react-js-snippets
+code --force --install-extension dsznajder.es7-react-js-snippets
 # golang
-code --install-extension golang.go
+code --force --install-extension golang.go
 # rust
-code --install-extension rust-lang.rust-analyzer
+code --force --install-extension rust-lang.rust-analyzer
