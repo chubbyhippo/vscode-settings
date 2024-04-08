@@ -15,10 +15,6 @@
     "when": "editorHasDefinitionProvider && editorTextFocus"
   },
   {
-    "command": "editor.action.clipboardCopyAction",
-    "key": "ctrl+c"
-  },
-  {
     "command": "editor.action.triggerParameterHints",
     "key": "ctrl+p",
     "when": "editorHasSignatureHelpProvider && editorTextFocus && vim.mode=='Insert'"
@@ -26,10 +22,6 @@
   {
     "command": "editor.action.clipboardCutAction",
     "key": "ctrl+x"
-  },
-  {
-    "command": "editor.action.clipboardPasteAction",
-    "key": "ctrl+v"
   },
   {
     "command": "redo",
