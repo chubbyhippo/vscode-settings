@@ -303,7 +303,6 @@
     "<C-c>": false,
     "<C-e>": false,
     "<C-f>": false,
-    "<C-v>": false,
     "<C-x>": false
   },
   "extensions.experimental.affinity": {
