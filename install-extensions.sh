@@ -28,3 +28,7 @@ code --force --install-extension dsznajder.es7-react-js-snippets
 code --force --install-extension golang.go
 # rust
 code --force --install-extension rust-lang.rust-analyzer
+# powershell
+code --force --install-extension ms-vscode.powershell
+
+
