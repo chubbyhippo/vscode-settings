@@ -1,6 +1,7 @@
 {
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
+  "editor.fontSize": 13,
   "files.autoSave": "afterDelay",
   "telemetry.telemetryLevel": "off",
   "vim.easymotion": true,
