@@ -25,6 +25,16 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
+        "g",
+        "t"
+      ],
+      "commands": [
+        "java.test.goToTest"
+      ],
+      "when": "resourceExtname == '.java'"
+    },
+    {
+      "before": [
         "s"
       ],
       "after": [
