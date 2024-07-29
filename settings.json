@@ -35,6 +35,16 @@
     },
     {
       "before": [
+        "g",
+        "t"
+      ],
+      "commands": [
+        "java.test.goToTestSubject"
+      ],
+      "when": "resourceExtname == '.java' && resourceFilename =~ /Test/"
+    },
+    {
+      "before": [
         "s"
       ],
       "after": [
