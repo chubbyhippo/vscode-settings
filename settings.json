@@ -314,6 +314,16 @@
       "before": [
         "<leader>",
         "s",
+        "a"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
         "f"
       ],
       "commands": [
