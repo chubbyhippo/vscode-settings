@@ -272,6 +272,16 @@
     {
       "before": [
         "<leader>",
+        "f",
+        "o"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "g",
         "p"
       ],
