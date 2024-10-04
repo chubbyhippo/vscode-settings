@@ -364,6 +364,14 @@
       "after": [
         "^"
       ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
     }
   ],
   "vim.leader": "<space>",
