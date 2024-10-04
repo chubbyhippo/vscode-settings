@@ -356,6 +356,14 @@
         "g",
         "T"
       ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
     }
   ],
   "vim.leader": "<space>",
@@ -364,7 +372,6 @@
     "<C-b>": false,
     "<C-c>": true,
     "<C-e>": false,
-    "<C-f>": false,
     "<C-v>": true,
     "<C-x>": false
   },
