@@ -243,6 +243,16 @@
       "before": [
         "<leader>",
         "g",
+        "p"
+      ],
+      "commands": [
+        "git.pull"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
         "P"
       ],
       "commands": [
