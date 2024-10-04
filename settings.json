@@ -380,8 +380,15 @@
       "after": [
         "}"
       ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "{"
+      ]
     }
-
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
