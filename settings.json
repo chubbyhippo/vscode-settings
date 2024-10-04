@@ -400,6 +400,40 @@
       ]
     }
   ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "}"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "{"
+      ]
+    }
+  ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
