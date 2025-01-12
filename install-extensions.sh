@@ -30,6 +30,3 @@ code --force --install-extension golang.go
 code --force --install-extension rust-lang.rust-analyzer
 # powershell
 code --force --install-extension ms-vscode.powershell
-# fuzzy file open
-code --force --install-extension rlivings39.fzf-quick-open
-
