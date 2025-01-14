@@ -333,6 +333,16 @@
     {
       "before": [
         "<leader>",
+        "r",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.replaceInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "s",
         "a"
       ],
@@ -442,7 +452,17 @@
       "after": [
         "{"
       ]
-    }
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.replaceInFiles"
+      ]
+    },
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
