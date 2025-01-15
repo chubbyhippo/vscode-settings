@@ -33,7 +33,7 @@
         "workbench.action.openSettings",
         "settings.switchToJSON"
       ]
-    }
+    },
     {
       "before": [
         "g",
