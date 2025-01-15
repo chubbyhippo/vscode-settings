@@ -384,6 +384,16 @@
       "before": [
         "<leader>",
         "r",
+        "n"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
         "r"
       ],
       "commands": [
