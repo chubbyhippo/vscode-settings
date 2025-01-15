@@ -242,6 +242,17 @@
     {
       "before": [
         "<leader>",
+        "e",
+        "V"
+      ],
+      "commands": [
+        "workbench.action.openSettings",
+        "settings.switchToJSON"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "g",
         "p"
       ],
@@ -307,6 +318,15 @@
       "commands": [
         "workbench.action.closeSidebar",
         "workbench.action.closePanel"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "m"
+      ],
+      "commands": [
+        ":marks"
       ]
     },
     {
