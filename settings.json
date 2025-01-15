@@ -75,16 +75,6 @@
     },
     {
       "before": [
-        "s"
-      ],
-      "after": [
-        "leader",
-        "leader",
-        "s"
-      ]
-    },
-    {
-      "before": [
         "n"
       ],
       "after": [
