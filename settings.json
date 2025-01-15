@@ -5,13 +5,14 @@
   "editor.lineHeight": 1.2,
   "files.autoSave": "afterDelay",
   "telemetry.telemetryLevel": "off",
+  "vim.hlsearch": true,
   "vim.incsearch": true,
+  "vim.showcmd": true,
+  "vim.smartRelativeLine": true,
   "vim.sneak": true,
   "vim.surround": true,
-  "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.smartRelativeLine": true,
+  "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -24,6 +25,16 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        ".",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.openGlobalKeybindings"
+      ]
+    },
     {
       "before": [
         "<leader>",
