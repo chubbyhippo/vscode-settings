@@ -493,6 +493,16 @@
         "workbench.action.replaceInFiles"
       ]
     },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
