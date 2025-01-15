@@ -25,6 +25,17 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
+        "<leader>",
+        ".",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.openSettings",
+        "settings.switchToJSON"
+      ]
+    }
+    {
+      "before": [
         "g",
         "t"
       ],
@@ -510,6 +521,7 @@
     "<C-b>": false,
     "<C-c>": true,
     "<C-e>": false,
+    "<C-r>": true,
     "<C-v>": true,
     "<C-x>": false
   },
