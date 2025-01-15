@@ -577,6 +577,21 @@
     {
       "before": [
         "<leader>",
+        "e",
+        "v"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.variable"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "r",
         "e"
       ],
