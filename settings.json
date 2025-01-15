@@ -5,7 +5,6 @@
   "editor.lineHeight": 1.2,
   "files.autoSave": "afterDelay",
   "telemetry.telemetryLevel": "off",
-  "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
