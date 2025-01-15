@@ -548,6 +548,21 @@
       "before": [
         "<leader>",
         "e",
+        "c"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.constant"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
         "f"
       ],
       "commands": [
