@@ -547,6 +547,21 @@
     {
       "before": [
         "<leader>",
+        "e",
+        "m"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.function"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "r",
         "e"
       ],
