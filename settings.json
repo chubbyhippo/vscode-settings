@@ -6,6 +6,7 @@
   "files.autoSave": "afterDelay",
   "telemetry.telemetryLevel": "off",
   "vim.incsearch": true,
+  "vim.sneak": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": false,
