@@ -383,6 +383,16 @@
     {
       "before": [
         "<leader>",
+        "s",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "<leader>"
       ],
       "after": [
