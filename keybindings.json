@@ -503,11 +503,6 @@
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "command": "editor.action.startFindReplaceAction",
-    "key": "ctrl+r",
-    "when": "editorFocus || editorIsOpen"
-  },
-  {
     "command": "editor.action.codeAction",
     "key": "ctrl+alt+c",
     "args": {
