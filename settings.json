@@ -27,55 +27,6 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
-        "<leader>",
-        ".",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.openGlobalKeybindings"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        ".",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.openSettings",
-        "settings.switchToJSON"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "b",
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "d",
-      ],
-      "commands": [
-        ":noh"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "e",
-        "m",
-      ],
-      "commands": [
-        ":noh"
-      ]
-    },
-    {
-      "before": [
         "g",
         "t"
       ],
@@ -208,6 +159,55 @@
       "after": [
         "<c-w>",
         ">"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ".",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.openGlobalKeybindings"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ".",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.openSettings",
+        "settings.switchToJSON"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+      ],
+      "commands": [
+        ":noh"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
+        "m",
+      ],
+      "commands": [
+        ":noh"
       ]
     },
     {
