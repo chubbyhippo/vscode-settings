@@ -46,6 +46,15 @@
     },
     {
       "before": [
+        "<leader>",
+        "d",
+      ],
+      "commands": [
+        ":noh"
+      ]
+    },
+    {
+      "before": [
         "g",
         "t"
       ],
