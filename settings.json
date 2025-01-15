@@ -562,6 +562,21 @@
     {
       "before": [
         "<leader>",
+        "e",
+        "p"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.introduce"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "r",
         "e"
       ],
