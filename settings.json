@@ -36,6 +36,15 @@
     },
     {
       "before": [
+        "<leader>",
+        "b",
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
         "g",
         "t"
       ],
