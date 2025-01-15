@@ -363,6 +363,16 @@
     {
       "before": [
         "<leader>",
+        "o",
+        "i"
+      ],
+      "commands": [
+        "editor.action.organizeImports"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "r",
         "e"
       ],
