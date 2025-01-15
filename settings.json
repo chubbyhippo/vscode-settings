@@ -383,6 +383,15 @@
     {
       "before": [
         "<leader>",
+        "q",
+      ],
+      "commands": [
+        ":q"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "r",
         "e"
       ],
