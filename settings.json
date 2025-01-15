@@ -7,9 +7,10 @@
   "telemetry.telemetryLevel": "off",
   "vim.incsearch": true,
   "vim.sneak": true,
+  "vim.surround": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
-  "vim.hlsearch": false,
+  "vim.hlsearch": true,
   "vim.smartRelativeLine": true,
   "vim.insertModeKeyBindings": [
     {
