@@ -455,7 +455,7 @@
   },
   {
     "command": "workbench.action.nextEditor",
-    "key": "tab"
+    "key": "ctrl+tab"
   },
   {
     "command": "editor.action.organizeImports",
@@ -469,7 +469,7 @@
   },
   {
     "command": "workbench.action.previousEditor",
-    "key": "shift+tab"
+    "key": "ctrl+shift+tab"
   },
   {
     "command": "workbench.action.selectTheme",
