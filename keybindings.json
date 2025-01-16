@@ -1847,5 +1847,15 @@
     "key": "ctrl+down",
     "command": "-search.focus.nextInputBox",
     "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "search.focus.previousInputBox",
+    "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "-search.focus.previousInputBox",
+    "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
   }
 ]
