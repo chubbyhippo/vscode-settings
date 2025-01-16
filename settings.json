@@ -454,6 +454,16 @@
       "before": [
         "<leader>",
         "s",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
         "t"
       ],
       "commands": [
