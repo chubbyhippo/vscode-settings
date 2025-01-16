@@ -14,7 +14,6 @@
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": true,
   "workbench.colorTheme": "Kimbie Dark",
-  "workbench.editor.showTabs": "none",
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -161,6 +160,22 @@
       "after": [
         "<c-w>",
         ">"
+      ]
+    },
+    {
+      "before": [
+        "]"
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
+    },
+    {
+      "before": [
+        "["
+      ],
+      "commands": [
+        "editor.action.marker.prev"
       ]
     },
     {
