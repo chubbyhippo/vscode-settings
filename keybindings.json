@@ -2,7 +2,7 @@
   {
     "command": "workbench.action.focusActiveEditorGroup",
     "key": "escape",
-    "when": "!editorTextFocus"
+    "when": "!editorTextFocus || inOutput"
   },
   {
     "command": "editor.action.quickFix",
