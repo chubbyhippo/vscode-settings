@@ -301,6 +301,16 @@
       "before": [
         "<leader>",
         "a",
+        "P"
+      ],
+      "commands": [
+        "workbench.panel.markers.view.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
         "s"
       ],
       "commands": [
@@ -315,6 +325,16 @@
       ],
       "commands": [
         "workbench.action.terminal.toggleTerminal"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "T"
+      ],
+      "commands": [
+        "testing.showMostRecentOutput"
       ]
     },
     {
