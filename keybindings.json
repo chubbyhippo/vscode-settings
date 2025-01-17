@@ -1877,5 +1877,10 @@
     "key": "shift+f10",
     "command": "-editor.action.showContextMenu",
     "when": "textInputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   }
 ]
