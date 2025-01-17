@@ -300,6 +300,26 @@
     {
       "before": [
         "<leader>",
+        "a",
+        "s"
+      ],
+      "commands": [
+        "outline.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "e",
         "V"
       ],
@@ -326,26 +346,6 @@
       ],
       "commands": [
         "git.push"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "a",
-        "s"
-      ],
-      "commands": [
-        "outline.focus"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "a",
-        "t"
-      ],
-      "commands": [
-        "workbench.action.terminal.toggleTerminal"
       ]
     },
     {
