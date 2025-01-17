@@ -1857,5 +1857,25 @@
     "key": "ctrl+up",
     "command": "-search.focus.previousInputBox",
     "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "settings.action.showContextMenu",
+    "when": "inSettingsEditor"
+  },
+  {
+    "key": "shift+f9",
+    "command": "-settings.action.showContextMenu",
+    "when": "inSettingsEditor"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "editor.action.showContextMenu",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+f10",
+    "command": "-editor.action.showContextMenu",
+    "when": "textInputFocus"
   }
 ]
