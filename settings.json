@@ -341,11 +341,101 @@
       "before": [
         "<leader>",
         "e",
+        "c"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.constant"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
+        "f"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.field"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
+        "m"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.function"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
+        "p"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.introduce"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
+        "v"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.variable"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
         "V"
       ],
       "commands": [
         "workbench.action.openSettings",
         "settings.switchToJSON"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "i",
+        "n"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.inline"
+          }
+        }
       ]
     },
     {
@@ -772,6 +862,21 @@
           "command": "editor.action.codeAction",
           "args": {
             "kind": "refactor.extract.variable"
+          }
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "i",
+        "n"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.inline"
           }
         }
       ]
