@@ -101,8 +101,12 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": ["<leader>", "d"],
+      "before": ["<leader>", "d", "h"],
       "commands": [":noh"]
+    },
+    {
+      "before": ["<leader>", "d", "m"],
+      "commands": ["numberedBookmarks.clearFromAllFiles"]
     },
     {
       "before": ["<leader>", "a", "c"],
@@ -409,7 +413,7 @@
     {
       "before": ["'", "9"],
       "commands": ["numberedBookmarks.jumpToBookmark9"]
-    },
+    }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
