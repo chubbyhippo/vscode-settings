@@ -10,7 +10,7 @@ wget -qO - https://raw.githubusercontent.com/chubbyhippo/code-settings/main/inst
 ```powershell
 irm https://raw.githubusercontent.com/chubbyhippo/code-settings/refs/heads/main/install.ps1 | iex
 ```
-# uninstall extensions
+# Uninstall extensions
 ## powershell
 ```powershell
 code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
