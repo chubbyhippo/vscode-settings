@@ -11,6 +11,11 @@ wget -qO - https://raw.githubusercontent.com/chubbyhippo/code-settings/main/inst
 ```powershell
 irm https://raw.githubusercontent.com/chubbyhippo/code-settings/refs/heads/main/install.ps1 | iex
 ```
+# Install extensions
+## basic
+```
+
+```
 # Uninstall extensions
 ## powershell
 ```powershell
