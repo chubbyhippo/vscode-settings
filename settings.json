@@ -298,6 +298,10 @@
       "commands": ["workbench.action.findInFiles"]
     },
     {
+      "before": ["<leader>", "t"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
       "before": ["<leader>", "<leader>"],
       "after": ["<c-^>"]
     },
