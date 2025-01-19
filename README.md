@@ -13,8 +13,8 @@ irm https://raw.githubusercontent.com/chubbyhippo/code-settings/refs/heads/main/
 ```
 # Install extensions
 ## basic
-```
-
+```curl
+curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install-extensions.sh | /usr/bin/env sh
 ```
 # Uninstall extensions
 ## powershell
