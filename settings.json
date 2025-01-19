@@ -266,13 +266,13 @@
     },
     {
       "before": ["<leader>", "r", "r"],
-      "commands": ["testing.runAtCursor"],
-      "when": "resourceFilename.toLowerCase() =~ /test/"
+      "commands": ["java.debug.runJavaFile"],
+      "when": "resourceExtname == '.java'"
     },
     {
       "before": ["<leader>", "r", "r"],
-      "commands": ["java.debug.runJavaFile"],
-      "when": "resourceExtname == '.java'"
+      "commands": ["testing.runAtCursor"],
+      "when": "resourceFilename.toLowerCase() =~ /test/"
     },
     {
       "before": ["<leader>", "r", "u"],
