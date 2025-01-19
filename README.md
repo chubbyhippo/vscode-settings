@@ -16,6 +16,9 @@ irm https://raw.githubusercontent.com/chubbyhippo/code-settings/refs/heads/main/
 ```curl
 curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install-extensions.sh | /usr/bin/env sh
 ```
+```powershell
+irm https://raw.githubusercontent.com/chubbyhippo/code-settings/refs/heads/main/install-extensions.ps1 | iex
+```
 # Uninstall extensions
 ## powershell
 ```powershell
