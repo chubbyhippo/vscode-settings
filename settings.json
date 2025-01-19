@@ -270,6 +270,11 @@
       "when": "resourceFilename.toLowerCase() =~ /test/"
     },
     {
+      "before": ["<leader>", "r", "r"],
+      "commands": ["java.debug.runJavaFile"],
+      "when": "resourceExtname == '.java'"
+    },
+    {
       "before": ["<leader>", "r", "u"],
       "commands": ["workbench.debug.welcome.focus"]
     },
