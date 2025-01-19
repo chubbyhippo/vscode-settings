@@ -329,7 +329,15 @@
     {
       "before": ["H"],
       "after": ["{"]
-    }
+    },
+    {
+      "before": ["m", "0"],
+      "commands": ["numberedBookmarks.toggleBookmark0"]
+    },
+    {
+      "before": ["'", "0"],
+      "commands": ["numberedBookmarks.jumpToBookmark0"]
+    },
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
