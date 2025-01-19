@@ -20,11 +20,11 @@ curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install
 irm https://raw.githubusercontent.com/chubbyhippo/code-settings/refs/heads/main/install-extensions.ps1 | iex
 ```
 # Uninstall extensions
-## powershell
-```powershell
-code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
-```
 ## sh
 ```shell
 code --list-extensions | xargs -L 1 code --uninstall-extension;code --list-extensions | xargs -L 1 code --uninstall-extension
+```
+## powershell
+```powershell
+code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
 ```
