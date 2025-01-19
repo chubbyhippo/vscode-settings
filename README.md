@@ -1,11 +1,11 @@
 # Install settings & keymappings
 ## curl
 ```shell
-curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install.sh | /usr/bin/env sh
+curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install.sh | /usr/bin/env sh
 ```
 ## wget
 ```shell
-wget -qO - https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install.sh | /usr/bin/env sh
+wget -qO - https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install.sh | /usr/bin/env sh
 ```
 ## powershell
 ```powershell
