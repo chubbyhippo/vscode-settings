@@ -1,10 +1,13 @@
 # Install settings & keymappings
+## curl
 ```shell
 curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install.sh | /usr/bin/env sh
 ```
+## wget
 ```shell
 wget -qO - https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install.sh | /usr/bin/env sh
 ```
+## powershell
 ```powershell
 irm https://raw.githubusercontent.com/chubbyhippo/code-settings/refs/heads/main/install.ps1 | iex
 ```
