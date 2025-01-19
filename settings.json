@@ -267,12 +267,11 @@
     {
       "before": ["<leader>", "r", "r"],
       "commands": ["java.debug.runJavaFile"],
-      "when": "resourceExtname == '.java'"
+      "when": "editorLangId == java"
     },
     {
-      "before": ["<leader>", "r", "r"],
-      "commands": ["testing.runAtCursor"],
-      "when": "resourceFilename.toLowerCase() =~ /test/"
+      "before": ["<leader>", "r", "t"],
+      "commands": ["testing.runAtCursor"]
     },
     {
       "before": ["<leader>", "r", "u"],
