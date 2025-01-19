@@ -29,6 +29,3 @@ elif [ "$(command -v wget)" ]; then
     wget https://raw.githubusercontent.com/chubbyhippo/code-settings/main/settings.json -P "$settings_json_destination"
     wget https://raw.githubusercontent.com/chubbyhippo/code-settings/main/keybindings.json -P "$keybindings_json_destination"
 fi
-
-# install extensions
-curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install-extensions.sh | /usr/bin/env sh
