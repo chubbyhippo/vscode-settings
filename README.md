@@ -9,15 +9,15 @@ wget -qO - https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/he
 ```
 ## powershell
 ```powershell
-irm https://raw.githubusercontent.com/chubbyhippo/code-settings/refs/heads/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install.ps1 | iex
 ```
 # Install extensions
 ## basic
 ```curl
-curl -s https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install-extensions.sh | /usr/bin/env sh
+curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
 ```
 ```powershell
-irm https://raw.githubusercontent.com/chubbyhippo/code-settings/refs/heads/main/install-extensions.ps1 | iex
+irm https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.ps1 | iex
 ```
 # Uninstall extensions
 ## sh
