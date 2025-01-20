@@ -26,6 +26,13 @@ curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-java.sh | Invoke-Expression
 ```
+## js
+```curl
+curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-js.sh | /usr/bin/env sh
+```
+```powershell
+Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-js.sh | Invoke-Expression
+```
 # Uninstall extensions
 ## sh
 ```shell
