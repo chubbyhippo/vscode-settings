@@ -13,3 +13,5 @@ code --force --install-extension dbaeumer.vscode-eslint
 # debugger
 code --force --install-extension ms-vscode.js-debug
 code --force --install-extension ms-vscode.js-debug-companion
+# vitest
+code --force --install-extension vitest.explorer
