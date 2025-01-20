@@ -2,6 +2,8 @@
 
 # keybindings
 code --force --install-extension vscodevim.vim
+# sonarqube
+code --force --install-extension SonarSource.sonarlint-vscode
 # git
 code --force --install-extension eamodio.gitlens
 # numbered bookmark
