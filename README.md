@@ -17,7 +17,7 @@ irm https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/mai
 curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
 ```
 ```powershell
-irm https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.ps1 | iex
+Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install-extensions.sh | Invoke-Expression
 ```
 # Uninstall extensions
 ## sh
