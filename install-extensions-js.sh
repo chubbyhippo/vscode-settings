@@ -10,3 +10,6 @@ code --force --install-extension alefragnani.numbered-bookmarks
 code --force --install-extension esbenp.prettier-vscode
 # linter
 code --force --install-extension dbaeumer.vscode-eslint
+# debugger
+code --force --install-extension ms-vscode.js-debug
+code --force --install-extension ms-vscode.js-debug-companion
