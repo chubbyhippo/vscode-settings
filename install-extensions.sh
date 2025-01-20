@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # keybindings
 code --force --install-extension vscodevim.vim
