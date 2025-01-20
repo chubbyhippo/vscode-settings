@@ -6,3 +6,5 @@ code --force --install-extension vscodevim.vim
 code --force --install-extension eamodio.gitlens
 # numbered bookmark
 code --force --install-extension alefragnani.numbered-bookmarks
+# prettier
+code --force --install-extension esbenp.prettier-vscode
