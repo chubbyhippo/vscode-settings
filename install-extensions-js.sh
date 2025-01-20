@@ -8,3 +8,5 @@ code --force --install-extension eamodio.gitlens
 code --force --install-extension alefragnani.numbered-bookmarks
 # prettier
 code --force --install-extension esbenp.prettier-vscode
+# linter
+code --force --install-extension dbaeumer.vscode-eslint
