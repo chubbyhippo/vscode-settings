@@ -29,3 +29,6 @@ elif [ "$(command -v wget)" ]; then
     wget https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/settings.json -P "$settings_json_destination"
     wget https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/keybindings.json -P "$keybindings_json_destination"
 fi
+
+# install basic extensions
+curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
