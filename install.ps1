@@ -3,4 +3,4 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/chubbyhippo/vscode-set
 # keybindings.json
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/keybindings.json" -OutFile "$Home\AppData\Roaming\Code\User\keybindings.json"
 # install basic extensions
-irm https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.ps1 | iex
+Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | Invoke-Expression
