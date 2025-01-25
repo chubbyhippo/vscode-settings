@@ -98,7 +98,7 @@
     },
     {
       "before": ["<leader>", ".", "s"],
-      "commands": ["workbench.action.openSettings", "settings.switchToJSON"]
+      "commands": ["workbench.action.openSettingsJson"]
     },
     {
       "before": ["<leader>", "b"],
