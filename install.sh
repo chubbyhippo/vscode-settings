@@ -22,6 +22,7 @@ case $(uname) in
 esac
 # install settings.json
 echo "$settings_json_destination"
+echo "$keybindings_json_destination"
 if [ "$(command -v curl)" ]; then
     curl -k https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/settings.json -o "$settings_json_destination"
     curl -k https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/keybindings.json -o "$keybindings_json_destination"
