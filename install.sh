@@ -32,4 +32,4 @@ elif [ "$(command -v wget)" ]; then
 fi
 
 # install basic extensions
-curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
+curl -ks https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
