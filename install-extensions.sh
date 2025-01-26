@@ -10,5 +10,7 @@ code --force --install-extension eamodio.gitlens
 code --force --install-extension alefragnani.numbered-bookmarks
 # docker
 code --force --install-extension ms-azuretools.vscode-docker
+# wsl
+code --force --install-extension ms-vscode-remote.remote-wsl
 # yaml
 code --force --install-extension redhat.vscode-yaml
