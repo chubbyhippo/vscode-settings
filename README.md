@@ -1,7 +1,7 @@
 # Install settings & keymappings
 ## curl
 ```shell
-curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install.sh | /usr/bin/env sh
 ```
 ## wget
 ```shell
@@ -14,7 +14,7 @@ irm https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/mai
 # Install extensions
 ## basic
 ```curl
-curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
 ```
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | Invoke-Expression
@@ -28,14 +28,14 @@ Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/
 ```
 ## java
 ```curl
-curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-java.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-java.sh | /usr/bin/env sh
 ```
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-java.sh | Invoke-Expression
 ```
 ## js
 ```curl
-curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-js.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-js.sh | /usr/bin/env sh
 ```
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-js.sh | Invoke-Expression
