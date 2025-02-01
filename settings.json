@@ -327,6 +327,10 @@
       "commands": ["editor.debug.action.toggleBreakpoint"]
     },
     {
+      "before": ["<leader>", "t", "k"],
+      "commands": ["workbench.action.toggleScreencastMode"]
+    },
+    {
       "before": ["<leader>", "<leader>"],
       "after": ["<c-^>"]
     },
