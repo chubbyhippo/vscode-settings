@@ -133,6 +133,10 @@
       "commands": ["gradleDefaultProjectsView.focus"]
     },
     {
+      "before": ["<leader>", "a", "k"],
+      "commands": ["workbench.action.toggleScreencastMode"]
+    },
+    {
       "before": ["<leader>", "a", "m"],
       "commands": ["mavenProjects.focus"]
     },
