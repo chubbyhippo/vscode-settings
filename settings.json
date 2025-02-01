@@ -323,7 +323,7 @@
       "commands": ["workbench.action.findInFiles"]
     },
     {
-      "before": ["<leader>", "t"],
+      "before": ["<leader>", "t", "b"],
       "commands": ["editor.debug.action.toggleBreakpoint"]
     },
     {
