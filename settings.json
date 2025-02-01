@@ -311,6 +311,10 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["<leader>", "s", "k"],
+      "commands": ["workbench.action.toggleScreencastMode"]
+    },
+    {
       "before": ["<leader>", "s", "s"],
       "commands": ["workbench.action.showAllSymbols"]
     },
