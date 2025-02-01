@@ -101,6 +101,10 @@
       "commands": ["workbench.action.openSettingsJson"]
     },
     {
+      "before": ["<leader>", ".", "z"],
+      "commands": ["workbench.action.toggleZenMode"]
+    },
+    {
       "before": ["<leader>", "b"],
       "commands": ["workbench.action.quickOpen"]
     },
