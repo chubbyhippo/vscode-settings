@@ -334,6 +334,10 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["<leader>", "s", "i"],
+      "commands": ["editor.action.previewDeclaration"]
+    },
+    {
       "before": ["<leader>", "s", "k"],
       "commands": ["workbench.action.toggleScreencastMode"]
     },
