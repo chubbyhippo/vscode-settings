@@ -338,6 +338,10 @@
       "commands": ["workbench.action.toggleScreencastMode"]
     },
     {
+      "before": ["<leader>", "s", "p"],
+      "commands": ["editor.action.triggerParameterHints"]
+    },
+    {
       "before": ["<leader>", "s", "s"],
       "commands": ["workbench.action.showAllSymbols"]
     },
