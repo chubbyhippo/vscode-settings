@@ -281,11 +281,6 @@
     "when": "textInputFocus"
   },
   {
-    "command": "lineBreakInsert",
-    "key": "ctrl+[Enter]",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "command": "editor.action.insertLineAfter",
     "key": "shift+[Enter]",
     "when": "editorTextFocus && !editorReadonly"
@@ -2076,5 +2071,10 @@
   {
     "key": "ctrl+9",
     "command": "-workbench.action.openEditorAtIndex9"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-editor.action.submitComment",
+    "when": "commentEditorFocused"
   }
 ]
