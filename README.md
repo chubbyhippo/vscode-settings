@@ -21,7 +21,7 @@ Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/
 ```
 ## clojure
 ```curl
-curl -s https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-clojure.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-clojure.sh | /usr/bin/env sh
 ```
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-clojurea.sh | Invoke-Expression
