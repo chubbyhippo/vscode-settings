@@ -99,8 +99,16 @@
       "after": ["<c-u>", "z", "z"]
     },
     {
+      "before": ["<leader>", ".", "P"],
+      "commands": ["workbench.view.extensions"]
+    },
+    {
       "before": ["<leader>", ".", "k"],
       "commands": ["workbench.action.openGlobalKeybindings"]
+    },
+    {
+      "before": ["<leader>", ".", "P"],
+      "commands": ["workbench.view.extensions"]
     },
     {
       "before": ["<leader>", ".", "s"],
