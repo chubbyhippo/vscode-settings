@@ -12,9 +12,9 @@ wget -qO - https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/he
 irm https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install.ps1 | iex
 ```
 # Install extensions
-## basic
+## default
 ```curl
-curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-default-extensions.sh | /usr/bin/env sh
 ```
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | Invoke-Expression
