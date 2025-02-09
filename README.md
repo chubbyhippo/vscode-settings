@@ -21,24 +21,24 @@ Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/
 ```
 ## clojure
 ```curl
-curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-clojure.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/clojure.sh | /usr/bin/env sh
 ```
 ```powershell
-Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-clojurea.sh | Invoke-Expression
+Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/clojure.sh | Invoke-Expression
 ```
 ## java
 ```curl
-curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-java.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/java.sh | /usr/bin/env sh
 ```
 ```powershell
-Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-java.sh | Invoke-Expression
+Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/java.sh | Invoke-Expression
 ```
-## js
+## javascript
 ```curl
-curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-js.sh | /usr/bin/env sh
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/javascript.sh | /usr/bin/env sh
 ```
 ```powershell
-Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions-js.sh | Invoke-Expression
+Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/javascript.sh | Invoke-Expression
 ```
 # Uninstall extensions
 ## sh
