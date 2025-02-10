@@ -289,6 +289,10 @@
       "commands": ["explorer.newFile"]
     },
     {
+      "before": ["<leader>", "o", "f"],
+      "commands": ["workbench.action.files.openFile"]
+    },
+    {
       "before": ["<leader>", "o", "i"],
       "commands": ["editor.action.organizeImports"]
     },
