@@ -297,6 +297,10 @@
       "commands": ["editor.action.organizeImports"]
     },
     {
+      "before": ["<leader>", "o", "p"],
+      "commands": ["workbench.action.files.openFolder"]
+    },
+    {
       "before": ["<leader>", "q"],
       "commands": [":q"]
     },
