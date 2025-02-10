@@ -247,11 +247,6 @@
       "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": ["<leader>", "f", "o"],
-      "commands": ["calva-fmt.formatCurrentForm"],
-      "when": "editorLangId == clojure"
-    },
-    {
       "before": ["<leader>", "g", "P"],
       "commands": ["git.push"]
     },
