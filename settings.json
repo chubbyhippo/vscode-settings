@@ -309,11 +309,6 @@
       "commands": ["editor.action.rename"]
     },
     {
-      "before": ["<leader>", "r", "r"],
-      "commands": ["java.debug.runJavaFile"],
-      "when": "editorLangId == java"
-    },
-    {
       "before": ["<leader>", "r", "t"],
       "commands": ["testing.runAtCursor"]
     },
