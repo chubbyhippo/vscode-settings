@@ -1,3 +1,4 @@
+[
   {
     "command": "-acceptAlternativeSelectedSuggestion",
     "key": "shift+[Enter]"
@@ -2125,5 +2126,15 @@
   {
     "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "closeParameterHints",
+    "when": "editorFocus && parameterHintsVisible"
+  },
+  {
+    "key": "escape",
+    "command": "-closeParameterHints",
+    "when": "editorFocus && parameterHintsVisible"
   }
 ]
