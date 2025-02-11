@@ -14,3 +14,5 @@ code --force --install-extension ms-azuretools.vscode-docker
 code --force --install-extension ms-vscode-remote.remote-wsl
 # yaml
 code --force --install-extension redhat.vscode-yaml
+# prettier
+code --force --install-extension esbenp.prettier-vscode
