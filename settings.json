@@ -409,6 +409,26 @@
       "commands": ["editor.action.marker.next"]
     },
     {
+      "before": ["{"],
+      "commands": ["workbench.action.editor.previousChange"],
+      "when" : "editorTextFocus && !textCompareEditorActive"
+    },
+    {
+      "before": ["}"],
+      "commands": ["workbench.action.editor.nextChange"],
+      "when" : "editorTextFocus && !textCompareEditorActive"
+    },
+    {
+      "before": ["{"],
+      "commands": ["workbench.action.compareEditor.previousChange"],
+      "when" : "textCompareEditorActive"
+    },
+    {
+      "before": ["}"],
+      "commands": ["workbench.action.compareEditor.nextChange"],
+      "when" : "textCompareEditorActive"
+    },
+    {
       "before": ["_"],
       "after": ["<c-w>", "<"]
     },
@@ -605,6 +625,7 @@
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
+    "<C-0>": true,
     "<C-a>": false,
     "<C-b>": false,
     "<C-c>": true,
