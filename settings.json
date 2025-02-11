@@ -410,23 +410,19 @@
     },
     {
       "before": ["{"],
-      "commands": ["workbench.action.editor.previousChange"],
-      "when" : "editorTextFocus && !textCompareEditorActive"
+      "command": ["workbench.action.editor.previousChange"],
     },
     {
       "before": ["}"],
       "commands": ["workbench.action.editor.nextChange"],
-      "when" : "editorTextFocus && !textCompareEditorActive"
     },
     {
-      "before": ["{"],
+      "before": ["("],
       "commands": ["workbench.action.compareEditor.previousChange"],
-      "when" : "textCompareEditorActive"
     },
     {
-      "before": ["}"],
+      "before": [")"],
       "commands": ["workbench.action.compareEditor.nextChange"],
-      "when" : "textCompareEditorActive"
     },
     {
       "before": ["_"],
