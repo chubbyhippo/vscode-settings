@@ -24,6 +24,8 @@ Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/
 ```shell
 code --list-extensions | xargs -L 1 code --uninstall-extension;code --list-extensions | xargs -L 1 code --uninstall-extension
 ```
+## languages
+https://github.com/chubbyhippo/vscode-settings/tree/main/extensions
 ## powershell
 ```powershell
 code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
