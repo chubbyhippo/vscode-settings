@@ -437,16 +437,6 @@
       "commands": ["editor.action.goToImplementation"]
     },
     {
-      "before": ["g", "t"],
-      "commands": ["java.test.goToTest"],
-      "when": "resourceExtname == '.java'"
-    },
-    {
-      "before": ["g", "t"],
-      "commands": ["java.test.goToTestSubject"],
-      "when": "resourceExtname == '.java' && resourceFilename.toLowerCase() =~ /test/"
-    },
-    {
       "before": ["m", "0"],
       "commands": ["numberedBookmarks.toggleBookmark0"]
     },
