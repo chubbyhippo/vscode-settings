@@ -625,7 +625,6 @@
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
-    "<C-0>": true,
     "<C-a>": false,
     "<C-b>": false,
     "<C-c>": true,
