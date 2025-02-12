@@ -1,5 +1,27 @@
-
 {
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.2,
+  "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "always",
+  "numberedBookmarks.navigateThroughAllFiles": "replace",
+  "telemetry.telemetryLevel": "off",
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.showcmd": true,
+  "vim.smartRelativeLine": true,
+  "vim.sneak": true,
+  "vim.surround": true,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "workbench.colorTheme": "Kimbie Dark",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["'", "0"],
@@ -42,6 +64,14 @@
       "commands": ["numberedBookmarks.jumpToBookmark9"]
     },
     {
+      "before": ["("],
+      "commands": ["workbench.action.compareEditor.previousChange"]
+    },
+    {
+      "before": [")"],
+      "commands": ["workbench.action.compareEditor.nextChange"]
+    },
+    {
       "before": ["+"],
       "after": ["<c-w>", ">"]
     },
@@ -82,12 +112,12 @@
       "commands": ["workbench.view.extensions"]
     },
     {
-      "before": ["<leader>", ".", "k"],
-      "commands": ["workbench.action.openGlobalKeybindings"]
-    },
-    {
       "before": ["<leader>", ".", "P"],
       "commands": ["workbench.view.extensions"]
+    },
+    {
+      "before": ["<leader>", ".", "k"],
+      "commands": ["workbench.action.openGlobalKeybindings"]
     },
     {
       "before": ["<leader>", ".", "s"],
@@ -268,8 +298,20 @@
       "commands": ["explorer.newFile"]
     },
     {
+      "before": ["<leader>", "n", "t"],
+      "commands": ["workbench.action.terminal.new"]
+    },
+    {
+      "before": ["<leader>", "o", "f"],
+      "commands": ["workbench.action.files.openFile"]
+    },
+    {
       "before": ["<leader>", "o", "i"],
       "commands": ["editor.action.organizeImports"]
+    },
+    {
+      "before": ["<leader>", "o", "p"],
+      "commands": ["workbench.action.files.openFolder"]
     },
     {
       "before": ["<leader>", "q"],
@@ -426,7 +468,162 @@
     {
       "before": ["n"],
       "after": ["n", "z", "z", "z", "v"]
+    },
+    {
+      "before": ["{"],
+      "command": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["}"],
+      "commands": ["workbench.action.editor.nextChange"]
     }
-  ]
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["J"],
+      "after": ["}"]
+    },
+    {
+      "before": ["K"],
+      "after": ["{"]
+    },
+    {
+      "before": ["`"],
+      "after": ["S", "`"]
+    },
+    {
+      "before": ["'"],
+      "after": ["S", "'"]
+    },
+    {
+      "before": ["\""],
+      "after": ["S", "\""]
+    },
+    {
+      "before": ["("],
+      "after": ["S", "("]
+    },
+    {
+      "before": [")"],
+      "after": ["S", ")"]
+    },
+    {
+      "before": ["["],
+      "after": ["S", "["]
+    },
+    {
+      "before": ["]"],
+      "after": ["S", "]"]
+    },
+    {
+      "before": ["{"],
+      "after": ["S", "{"]
+    },
+    {
+      "before": ["}"],
+      "after": ["S", "}"]
+    },
+    {
+      "before": ["<leader>", "e", "c"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.constant"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "f"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.field"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "m"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.function"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "p"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.introduce"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "e", "v"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.variable"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "i", "n"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.inline"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "r", "e"],
+      "commands": ["editor.action.refactor"]
+    },
+    {
+      "before": ["<leader>", "r", "w"],
+      "commands": ["workbench.action.replaceInFiles"]
+    },
+    {
+      "before": ["<leader>", "s", "t"],
+      "commands": ["workbench.action.findInFiles"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-c>": true,
+    "<C-e>": false,
+    "<C-r>": true,
+    "<C-v>": true,
+    "<C-x>": false
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
-
