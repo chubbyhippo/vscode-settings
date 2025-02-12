@@ -64,14 +64,6 @@
       "commands": ["numberedBookmarks.jumpToBookmark9"]
     },
     {
-      "before": ["("],
-      "commands": ["workbench.action.compareEditor.previousChange"]
-    },
-    {
-      "before": [")"],
-      "commands": ["workbench.action.compareEditor.nextChange"]
-    },
-    {
       "before": ["+"],
       "after": ["<c-w>", ">"]
     },
@@ -112,12 +104,12 @@
       "commands": ["workbench.view.extensions"]
     },
     {
-      "before": ["<leader>", ".", "P"],
-      "commands": ["workbench.view.extensions"]
-    },
-    {
       "before": ["<leader>", ".", "k"],
       "commands": ["workbench.action.openGlobalKeybindings"]
+    },
+    {
+      "before": ["<leader>", ".", "P"],
+      "commands": ["workbench.view.extensions"]
     },
     {
       "before": ["<leader>", ".", "s"],
@@ -269,6 +261,7 @@
       "before": ["<leader>", "g", "p"],
       "commands": ["git.pull"]
     },
+
     {
       "before": ["<leader>", "h"],
       "commands": [
@@ -330,6 +323,10 @@
     {
       "before": ["<leader>", "r", "n"],
       "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "r", "r"],
+      "commands": ["testing.runAtCursor", "java.debug.runJavaFile"]
     },
     {
       "before": ["<leader>", "r", "t"],
@@ -420,6 +417,22 @@
       "commands": ["editor.action.marker.next"]
     },
     {
+      "before": ["{"],
+      "command": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["}"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["("],
+      "commands": ["workbench.action.compareEditor.previousChange"]
+    },
+    {
+      "before": [")"],
+      "commands": ["workbench.action.compareEditor.nextChange"]
+    },
+    {
       "before": ["_"],
       "after": ["<c-w>", "<"]
     },
@@ -470,14 +483,6 @@
     {
       "before": ["n"],
       "after": ["n", "z", "z", "z", "v"]
-    },
-    {
-      "before": ["{"],
-      "command": ["workbench.action.editor.previousChange"]
-    },
-    {
-      "before": ["}"],
-      "commands": ["workbench.action.editor.nextChange"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
