@@ -132,8 +132,8 @@
       "commands": ["testing.showMostRecentOutput"]
     },
     {
-      "before": ["<leader>", "a", "c"],
-      "commands": ["workbench.view.scm"]
+      "before": ["<leader>", "a", "b"],
+      "commands": ["spring.beans.focus"]
     },
     {
       "before": ["<leader>", "a", "c"],
