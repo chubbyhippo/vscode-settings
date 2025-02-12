@@ -5,4 +5,5 @@
       "commands": ["calva-fmt.formatCurrentForm"],
       "when": "editorLangId == clojure"
     },
+  ]
 }
