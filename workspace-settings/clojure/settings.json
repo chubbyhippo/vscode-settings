@@ -1,9 +1,5 @@
 {
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "f", "o"],
-      "commands": ["calva-fmt.formatCurrentForm"],
-      "when": "editorLangId == clojure"
-    },
-  ]
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
