@@ -252,7 +252,10 @@
     },
     {
       "before": ["<leader>", "f", "o"],
-      "commands": ["editor.action.formatDocument"]
+      "commands": [
+        "editor.action.formatDocument",
+        "calva-fmt.formatCurrentForm"
+      ]
     },
     {
       "before": ["<leader>", "g", "P"],
