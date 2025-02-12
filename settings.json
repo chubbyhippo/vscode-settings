@@ -594,6 +594,10 @@
       ]
     },
     {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
       "before": ["<leader>", "i", "n"],
       "commands": [
         {
