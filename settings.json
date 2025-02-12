@@ -148,6 +148,10 @@
       "commands": ["workbench.view.debug"]
     },
     {
+      "before": ["<leader>", "a", "e"],
+      "commands": ["spring.mappings.focus"]
+    },
+    {
       "before": ["<leader>", "a", "g"],
       "commands": ["gradleDefaultProjectsView.focus"]
     },
