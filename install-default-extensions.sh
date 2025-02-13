@@ -12,7 +12,9 @@ code --force --install-extension alefragnani.numbered-bookmarks
 code --force --install-extension ms-azuretools.vscode-docker
 # wsl
 code --force --install-extension ms-vscode-remote.remote-wsl
-# yaml
-code --force --install-extension redhat.vscode-yaml
 # prettier
 code --force --install-extension esbenp.prettier-vscode
+# yaml
+code --force --install-extension redhat.vscode-yaml
+# xml
+code --force --install-extension redhat.vscode-xml
