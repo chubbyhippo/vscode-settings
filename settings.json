@@ -385,6 +385,10 @@
       "commands": ["workbench.action.toggleScreencastMode"]
     },
     {
+      "before": ["<leader>", "w"],
+      "commands": [":w"]
+    },
+    {
       "before": ["<s-Tab>"],
       "after": ["g", "T"]
     },
