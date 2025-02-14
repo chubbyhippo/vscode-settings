@@ -16,6 +16,7 @@
   "vim.surround": true,
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": true,
+  "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Kimbie Dark",
   "vim.insertModeKeyBindings": [
     {
