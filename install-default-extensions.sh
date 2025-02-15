@@ -4,6 +4,8 @@
 code --force --install-extension vscodevim.vim
 # github theme
 code --force --install-extension GitHub.github-vscode-theme
+# material icon theme
+code --force --install-extension PKief.material-icon-theme
 # sonarqube
 code --force --install-extension SonarSource.sonarlint-vscode
 # git
