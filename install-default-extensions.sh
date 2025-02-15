@@ -2,6 +2,8 @@
 
 # keybindings
 code --force --install-extension vscodevim.vim
+# github theme
+code --force --install-extension GitHub.github-vscode-theme
 # sonarqube
 code --force --install-extension SonarSource.sonarlint-vscode
 # git
@@ -18,3 +20,4 @@ code --force --install-extension esbenp.prettier-vscode
 code --force --install-extension redhat.vscode-yaml
 # xml
 code --force --install-extension redhat.vscode-xml
+
