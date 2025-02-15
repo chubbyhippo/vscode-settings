@@ -18,6 +18,7 @@
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": true,
   "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.iconClickBehavior": "toggle",
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Kimbie Dark",
   "workbench.iconTheme": null,
