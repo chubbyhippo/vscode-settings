@@ -18,6 +18,7 @@
   "vim.useSystemClipboard": true,
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Kimbie Dark",
+  "workbench.iconTheme": null,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
