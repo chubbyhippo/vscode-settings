@@ -22,8 +22,8 @@
   "window.menuBarVisibility": "toggle",
   "workbench.activityBar.iconClickBehavior": "toggle",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Kimbie Dark",
-  "workbench.iconTheme": null,
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.renderIndentGuides": "onHover",
   "vim.insertModeKeyBindings": [
     {
