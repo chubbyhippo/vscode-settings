@@ -20,6 +20,7 @@
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Kimbie Dark",
   "workbench.iconTheme": null,
+  "workbench.tree.renderIndentGuides": "onHover",
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
