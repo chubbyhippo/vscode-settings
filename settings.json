@@ -90,22 +90,6 @@
       "after": ["<c-d>", "z", "z"]
     },
     {
-      "before": ["<c-h>"],
-      "after": ["<c-w>", "h"]
-    },
-    {
-      "before": ["<c-j>"],
-      "after": ["<c-w>", "j"]
-    },
-    {
-      "before": ["<c-k>"],
-      "after": ["<c-w>", "k"]
-    },
-    {
-      "before": ["<c-l>"],
-      "after": ["<c-w>", "l"]
-    },
-    {
       "before": ["<c-u>"],
       "after": ["<c-u>", "z", "z"]
     },
