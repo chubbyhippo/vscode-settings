@@ -2170,5 +2170,25 @@
     "key": "ctrl+shift+e",
     "command": "workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+    {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "vim.mode == 'Normal'"
   }
 ]
