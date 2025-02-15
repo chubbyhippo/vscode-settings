@@ -17,6 +17,7 @@
   "vim.surround": true,
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": true,
+  "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
   "workbench.activityBar.iconClickBehavior": "toggle",
   "workbench.activityBar.location": "top",
