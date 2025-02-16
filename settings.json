@@ -351,6 +351,10 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["<leader>", "s", "h"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
       "before": ["<leader>", "s", "i"],
       "commands": ["editor.action.previewDeclaration"]
     },
