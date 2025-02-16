@@ -1874,7 +1874,8 @@
   },
   {
     "command": "workbench.action.closeActiveEditor",
-    "key": "ctrl+f4"
+    "key": "ctrl+w",
+    "when": "!editorTextFocus"
   },
   {
     "command": "workbench.action.compareEditor.nextChange",
@@ -2190,5 +2191,9 @@
     "key": "ctrl+l",
     "command": "workbench.action.focusRightGroup",
     "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeActiveEditor"
   }
 ]
