@@ -1639,7 +1639,7 @@
   {
     "key": "g t",
     "command": "java.test.goToTest",
-    "when": "resourceExtname == '.java' && vim.mode == 'Normal'"
+    "when": "editorFocus && resourceExtname == '.java' && vim.mode == 'Normal'"
   },
   {
     "command": "java.test.goToTestSubject",
@@ -1649,7 +1649,7 @@
   {
     "key": "g t",
     "command": "java.test.goToTestSubject",
-    "when": "vim.mode == 'Normal' && resourceExtname == '.java' && resourceFilename =~ /Test/"
+    "when": "editorFocus && resourceExtname == '.java' && vim.mode == 'Normal' && resourceFilename =~ /Test/"
   },
   {
     "key": "ctrl+h",
