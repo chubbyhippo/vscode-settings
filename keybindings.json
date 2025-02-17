@@ -2040,7 +2040,8 @@
   },
   {
     "command": "workbench.action.openPreviousEditorFromHistory",
-    "key": "ctrl+e"
+    "key": "ctrl+e",
+    "when": "inQuickOpen"
   },
   {
     "command": "workbench.action.previousEditor",
@@ -2195,5 +2196,14 @@
   {
     "key": "cmd+w",
     "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenNavigatePrevious",
+    "when": "inQuickOpen"
   }
 ]
