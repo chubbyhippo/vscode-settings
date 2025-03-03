@@ -43,4 +43,10 @@ curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/ma
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/javascript.sh | Invoke-Expression
 ```
-
+## rust
+```curl
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/rust.sh | /usr/bin/env sh
+```
+```powershell
+Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/rust.sh | Invoke-Expression
+```
