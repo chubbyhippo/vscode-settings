@@ -1,3 +1,12 @@
+# Uninstall extensions
+## sh
+```shell
+code --list-extensions | xargs -L 1 code --uninstall-extension;code --list-extensions | xargs -L 1 code --uninstall-extension
+```
+## powershell
+```powershell
+code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
+```
 # Install extensions
 ## default
 ```curl
@@ -34,12 +43,4 @@ curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/ma
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/javascript.sh | Invoke-Expression
 ```
-# Uninstall extensions
-## sh
-```shell
-code --list-extensions | xargs -L 1 code --uninstall-extension;code --list-extensions | xargs -L 1 code --uninstall-extension
-```
-## powershell
-```powershell
-code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
-```
+
