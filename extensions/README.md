@@ -13,6 +13,13 @@ curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/ma
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/clojure.sh | Invoke-Expression
 ```
+## go
+```curl
+curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/go.sh | /usr/bin/env sh
+```
+```powershell
+Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/go.sh | Invoke-Expression
+```
 ## java
 ```curl
 curl https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/extensions/java.sh | /usr/bin/env sh
