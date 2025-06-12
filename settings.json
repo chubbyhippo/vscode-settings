@@ -306,6 +306,11 @@
       "commands": ["workbench.action.files.openFolder"]
     },
     {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.pinEditor"],
+      "when": ["!activeEditorIsPinned"]
+    },
+    {
       "before": ["<leader>", "q"],
       "commands": [":q"]
     },
