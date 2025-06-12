@@ -387,6 +387,11 @@
       "commands": ["workbench.action.toggleScreencastMode"]
     },
     {
+      "before": ["<leader>", "u", "p"],
+      "commands": ["workbench.action.unpinEditor"],
+      "when": ["activeEditorIsPinned"]
+    },
+    {
       "before": ["<leader>", "w"],
       "commands": [":w"]
     },
