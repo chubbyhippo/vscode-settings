@@ -173,6 +173,10 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["openEditors.closeAll"]
+    },
+    {
       "before": ["<leader>", "d", "h"],
       "commands": [":noh"]
     },
