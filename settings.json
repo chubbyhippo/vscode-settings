@@ -298,6 +298,10 @@
       "commands": ["workbench.action.terminal.new"]
     },
     {
+      "before": ["<leader>", "o", "e"],
+      "commands": ["revealFileInOS"]
+    },
+    {
       "before": ["<leader>", "o", "f"],
       "commands": ["workbench.action.files.openFile"]
     },
