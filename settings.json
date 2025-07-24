@@ -314,6 +314,10 @@
       "commands": ["workbench.action.files.openFolder"]
     },
     {
+      "before": ["<leader>", "o", "t"],
+      "commands": ["openInIntegratedTerminal"]
+    },
+    {
       "before": ["<leader>", "p"],
       "commands": ["workbench.action.pinEditor"],
       "when": ["!activeEditorIsPinned"]
