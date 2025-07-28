@@ -330,6 +330,10 @@
       "commands": ["editor.action.triggerParameterHints"]
     },
     {
+      "before": ["<leader>", "p", "i"],
+      "commands": ["editor.action.previewDeclaration"]
+    },
+    {
       "before": ["<leader>", "p", "t"],
       "commands": ["workbench.action.pinEditor"],
       "when": ["!activeEditorIsPinned"]
