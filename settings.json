@@ -263,6 +263,10 @@
       "commands": ["workbench.action.toggleFullScreen"]
     },
     {
+      "before": ["<leader>", "f", "u"],
+      "commands": ["references-view.findReferences"]
+    },
+    {
       "before": ["<leader>", "g", "P"],
       "commands": ["git.push"]
     },
