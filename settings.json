@@ -399,6 +399,10 @@
       "commands": ["workbench.action.toggleScreencastMode"]
     },
     {
+      "before": ["<leader>", "s", "o"],
+      "commands": ["workbench.action.debug.stepOver"]
+    },
+    {
       "before": ["<leader>", "s", "p"],
       "commands": ["editor.action.triggerParameterHints"]
     },
