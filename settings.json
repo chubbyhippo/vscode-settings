@@ -322,6 +322,10 @@
       "commands": ["openInIntegratedTerminal"]
     },
     {
+      "before": ["<leader>", "p", "p"],
+      "commands": ["editor.action.triggerParameterHints"]
+    },
+    {
       "before": ["<leader>", "p", "t"],
       "commands": ["workbench.action.pinEditor"],
       "when": ["!activeEditorIsPinned"]
