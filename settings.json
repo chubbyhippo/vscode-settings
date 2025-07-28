@@ -323,6 +323,10 @@
       "when": ["!activeEditorIsPinned"]
     },
     {
+      "before": ["<leader>", "p", "h"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
       "before": ["<leader>", "q"],
       "commands": [":q"]
     },
