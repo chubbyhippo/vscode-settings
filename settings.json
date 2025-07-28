@@ -407,6 +407,10 @@
       "commands": ["editor.debug.action.toggleBreakpoint"]
     },
     {
+      "before": ["<leader>", "t", "f"],
+      "commands": ["workbench.action.toggleFullScreen"]
+    },
+    {
       "before": ["<leader>", "t", "k"],
       "commands": ["workbench.action.toggleScreencastMode"]
     },
