@@ -255,6 +255,10 @@
       ]
     },
     {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.toggleFullScreen"]
+    },
+    {
       "before": ["<leader>", "g", "P"],
       "commands": ["git.push"]
     },
