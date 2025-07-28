@@ -696,6 +696,7 @@
     "<C-e>": false,
     "<C-r>": true,
     "<C-v>": true,
+    "<C-w>": false,
     "<C-x>": false
   },
   "extensions.experimental.affinity": {
