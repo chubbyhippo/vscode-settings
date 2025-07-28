@@ -177,6 +177,10 @@
       "commands": ["openEditors.closeAll"]
     },
     {
+      "before": ["<leader>", "c", "h"],
+      "commands": ["references-view.showCallHierarchy"]
+    },
+    {
       "before": ["<leader>", "d", "h"],
       "commands": [":noh"]
     },
