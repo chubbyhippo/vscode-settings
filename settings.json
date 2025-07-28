@@ -403,6 +403,10 @@
       "commands": ["workbench.action.debug.stepOver"]
     },
     {
+      "before": ["<leader>", "s", "O"],
+      "commands": ["workbench.action.debug.stepOut"]
+    },
+    {
       "before": ["<leader>", "s", "p"],
       "commands": ["editor.action.triggerParameterHints"]
     },
