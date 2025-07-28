@@ -318,7 +318,7 @@
       "commands": ["openInIntegratedTerminal"]
     },
     {
-      "before": ["<leader>", "p"],
+      "before": ["<leader>", "p", "t"],
       "commands": ["workbench.action.pinEditor"],
       "when": ["!activeEditorIsPinned"]
     },
