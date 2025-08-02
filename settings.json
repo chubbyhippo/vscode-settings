@@ -39,7 +39,11 @@
     {
       "before": ["[", "e"],
       "commands": ["editor.action.marker.prev"]
-    },    
+    }, 
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.accessibleDiffViewer.next"]
+    },
     {
       "before": ["'", "0"],
       "commands": ["numberedBookmarks.jumpToBookmark0"]
