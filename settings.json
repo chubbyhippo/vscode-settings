@@ -45,6 +45,10 @@
       "commands": ["editor.action.accessibleDiffViewer.next"]
     },
     {
+      "before": ["[", "d"],
+      "commands": ["editor.action.accessibleDiffViewer.prev"]
+    },
+    {
       "before": ["'", "0"],
       "commands": ["numberedBookmarks.jumpToBookmark0"]
     },
