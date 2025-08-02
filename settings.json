@@ -53,6 +53,10 @@
       "commands": ["workbench.action.editor.nextChange"]
     },
     {
+      "before": ["[", "c"],
+      "commands": ["workbench.action.editor.previousChange"]
+    },
+    {
       "before": ["'", "0"],
       "commands": ["numberedBookmarks.jumpToBookmark0"]
     },
