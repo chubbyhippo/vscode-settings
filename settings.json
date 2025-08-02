@@ -33,6 +33,10 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["]", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
       "before": ["'", "0"],
       "commands": ["numberedBookmarks.jumpToBookmark0"]
     },
