@@ -49,6 +49,10 @@
       "commands": ["editor.action.accessibleDiffViewer.prev"]
     },
     {
+      "before": ["]", "c"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
       "before": ["'", "0"],
       "commands": ["numberedBookmarks.jumpToBookmark0"]
     },
