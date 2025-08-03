@@ -125,6 +125,10 @@
       "commands": ["java.action.navigateToSuperImplementation"]
     },
     {
+      "before": ["g", "t"],
+      "commands": ["java.test.goToTest"]
+    },
+    {
       "before": ["<leader>", ".", "P"],
       "commands": ["workbench.view.extensions"]
     },
