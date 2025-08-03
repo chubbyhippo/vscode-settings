@@ -303,6 +303,10 @@
       "commands": ["java.test.goToTestSubject"]
     },
     {
+      "before": ["<leader>", "g", "t"],
+      "commands": ["java.test.goToTest"]
+    },
+    {
       "before": ["<leader>", "h"],
       "commands": [
         "workbench.action.closeSidebar",
