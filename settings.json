@@ -129,6 +129,10 @@
       "commands": ["java.test.goToTest"]
     },
     {
+      "before": ["g", "T"],
+      "commands": ["java.test.goToTestSubject"]
+    },
+    {
       "before": ["<leader>", ".", "P"],
       "commands": ["workbench.view.extensions"]
     },
