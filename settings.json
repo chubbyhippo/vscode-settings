@@ -300,7 +300,7 @@
     },
     {
       "before": ["<leader>", "g", "s"],
-      "commands": ["java.test.goToTestSubject"]
+      "commands": ["java.action.navigateToSuperImplementation"]
     },
     {
       "before": ["<leader>", "g", "t"],
