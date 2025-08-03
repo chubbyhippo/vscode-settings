@@ -121,6 +121,10 @@
       "commands": ["editor.action.goToImplementation"]
     },
     {
+      "before": ["g", "s"],
+      "commands": ["java.action.navigateToSuperImplementation"]
+    },
+    {
       "before": ["<leader>", ".", "P"],
       "commands": ["workbench.view.extensions"]
     },
