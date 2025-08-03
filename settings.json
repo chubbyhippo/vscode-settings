@@ -311,6 +311,10 @@
       "commands": ["java.test.goToTest"]
     },
     {
+      "before": ["<leader>", "g", "T"],
+      "commands": ["java.test.goToTestSubject"]
+    },
+    {
       "before": ["<leader>", "h"],
       "commands": [
         "workbench.action.closeSidebar",
