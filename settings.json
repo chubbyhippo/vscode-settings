@@ -299,6 +299,10 @@
       "commands": ["git.pull"]
     },
     {
+      "before": ["<leader>", "g", "s"],
+      "commands": ["java.test.goToTestSubject"]
+    },
+    {
       "before": ["<leader>", "h"],
       "commands": [
         "workbench.action.closeSidebar",
