@@ -22,4 +22,5 @@ code --force --install-extension esbenp.prettier-vscode
 code --force --install-extension redhat.vscode-yaml
 # xml
 code --force --install-extension redhat.vscode-xml
-
+# ]m [m
+code --force --install-extension mishkinf.goto-next-previous-member
