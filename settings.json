@@ -37,6 +37,10 @@
       "commands": ["gotoNextPreviousMember.nextMember"]
     },
     {
+      "before": ["[", "m"],
+      "commands": ["gotoNextPreviousMember.previousMember"]
+    },
+    {
       "before": ["]", "e"],
       "commands": ["editor.action.marker.next"]
     },
