@@ -33,6 +33,10 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["]", "m"],
+      "commands": ["gotoNextPreviousMember.nextMember"]
+    },
+    {
       "before": ["]", "e"],
       "commands": ["editor.action.marker.next"]
     },
