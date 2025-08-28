@@ -232,17 +232,7 @@
       "before": ["<leader>", "c", "k"],
       "commands": ["workbench.action.openGlobalKeybindings"]
     },
-    {
-      "before": ["<leader>", "c", "v"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.variable"
-          }
-        }
-      ]
-    },
+
     {
       "before": ["<leader>", "d", "h"],
       "commands": [":noh"]
