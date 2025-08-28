@@ -229,6 +229,17 @@
       "commands": ["references-view.showCallHierarchy"]
     },
     {
+      "before": ["<leader>", "c", "v"],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "args": {
+            "kind": "refactor.extract.variable"
+          }
+        }
+      ]
+    },
+    {
       "before": ["<leader>", "d", "h"],
       "commands": [":noh"]
     },
