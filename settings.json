@@ -229,6 +229,10 @@
       "commands": ["references-view.showCallHierarchy"]
     },
     {
+      "before": ["<leader>", "c", "k"],
+      "commands": ["workbench.action.openGlobalKeybindings"]
+    },
+    {
       "before": ["<leader>", "c", "v"],
       "commands": [
         {
