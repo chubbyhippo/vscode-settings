@@ -232,7 +232,10 @@
       "before": ["<leader>", "c", "k"],
       "commands": ["workbench.action.openGlobalKeybindings"]
     },
-
+    {
+      "before": ["<leader>", "c", "v"],
+      "commands": ["workbench.action.openSettings", "settings.switchToJSON"]
+    },
     {
       "before": ["<leader>", "d", "h"],
       "commands": [":noh"]
