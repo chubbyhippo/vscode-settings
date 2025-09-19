@@ -153,6 +153,10 @@
       "commands": ["workbench.view.extensions"]
     },
     {
+      "before": ["<leader>", ".", "r"],
+      "commands": ["update.restartToUpdate"]
+    },
+    {
       "before": ["<leader>", ".", "s"],
       "commands": ["workbench.action.openSettingsJson"]
     },
