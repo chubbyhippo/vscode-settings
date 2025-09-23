@@ -233,6 +233,10 @@
       "commands": ["workbench.action.openGlobalKeybindings"]
     },
     {
+      "before": ["<leader>", "c", "s"],
+      "commands": ["workbench.action.openSettingsJson"]
+    },
+    {
       "before": ["<leader>", "c", "v"],
       "commands": ["workbench.action.openSettings", "settings.switchToJSON"]
     },
