@@ -145,7 +145,7 @@
       "commands": ["workbench.action.openGlobalKeybindings"]
     },
     {
-      "before": ["<leader>", ".", "P"],
+      "before": ["<leader>", ".", "p"],
       "commands": ["workbench.view.extensions"]
     },
     {
