@@ -141,7 +141,7 @@
       "commands": ["java.test.goToTestSubject"]
     },
     {
-      "before": ["<leader>", ".", "P"],
+      "before": ["<leader>", ".", "p"],
       "commands": ["workbench.view.extensions"]
     },
     {
