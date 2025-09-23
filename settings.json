@@ -141,10 +141,6 @@
       "commands": ["java.test.goToTestSubject"]
     },
     {
-      "before": ["<leader>", ".", "p"],
-      "commands": ["workbench.view.extensions"]
-    },
-    {
       "before": ["<leader>", ".", "k"],
       "commands": ["workbench.action.openGlobalKeybindings"]
     },
