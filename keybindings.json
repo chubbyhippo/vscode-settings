@@ -1986,7 +1986,7 @@
   },
   {
     "command": "workbench.action.nextEditor",
-    "key": "ctrl+tab"
+    "key": "ctrl+shift+."
   },
   {
     "key": "cmd+1",
@@ -2035,7 +2035,7 @@
   },
   {
     "command": "workbench.action.previousEditor",
-    "key": "ctrl+shift+tab"
+    "key": "ctrl+shift+,"
   },
   {
     "command": "workbench.action.quickOpen",
