@@ -2216,5 +2216,9 @@
     "key": "ctrl+shift+n",
     "command": "editor.action.selectHighlights",
     "when": "vim.active && editorFocus && vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualBlock' && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.switchWindow"
   }
 ]
