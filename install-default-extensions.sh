@@ -1,26 +1,26 @@
 #!/usr/bin/env sh
 
 # keybindings
-code --force --install-extension vscodevim.vim
+code --install-extension vscodevim.vim
 # github theme
-code --force --install-extension GitHub.github-vscode-theme
+code --install-extension GitHub.github-vscode-theme
 # material icon theme
-code --force --install-extension PKief.material-icon-theme
+code --install-extension PKief.material-icon-theme
 # sonarqube
-code --force --install-extension SonarSource.sonarlint-vscode
+code --install-extension SonarSource.sonarlint-vscode
 # git
-code --force --install-extension eamodio.gitlens
+code --install-extension eamodio.gitlens
 # numbered bookmark
-code --force --install-extension alefragnani.numbered-bookmarks
+code --install-extension alefragnani.numbered-bookmarks
 # docker
-code --force --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-azuretools.vscode-docker
 # wsl
-code --force --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode-remote.remote-wsl
 # prettier
-code --force --install-extension esbenp.prettier-vscode
+code --install-extension esbenp.prettier-vscode
 # yaml
-code --force --install-extension redhat.vscode-yaml
+code --install-extension redhat.vscode-yaml
 # xml
-code --force --install-extension redhat.vscode-xml
+code --install-extension redhat.vscode-xml
 # ]m [m
-code --force --install-extension mishkinf.goto-next-previous-member
+code --install-extension mishkinf.goto-next-previous-member
