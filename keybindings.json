@@ -2222,7 +2222,7 @@
     "command": "-workbench.action.switchWindow"
   },
   {
-    "key": "shift+alt+k",
+    "key": "ctrl+alt+k",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
   },
@@ -2232,7 +2232,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+j",
+    "key": "ctrl+alt+j",
     "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus"
   },
