@@ -20,9 +20,7 @@ wget -qO - {raw_base_settings_url}/install.sh | /usr/bin/env sh
 irm {raw_base_settings_url}/install.ps1 | iex
 ----
 
-= Install extensions
-
-== default
+== Install default extensions
 [source,shell,subs="attributes"]
 ----
 curl {raw_base_settings_url}/install-default-extensions.sh | /usr/bin/env sh
@@ -33,9 +31,7 @@ curl {raw_base_settings_url}/install-default-extensions.sh | /usr/bin/env sh
 Invoke-RestMethod {raw_base_settings_url}/install-extensions.sh | Invoke-Expression
 ----
 
-= Uninstall extensions
-
-== sh
+== Uninstall extensions
 [source,shell]
 ----
 code --list-extensions | xargs -L 1 code --uninstall-extension;code --list-extensions | xargs -L 1 code --uninstall-extension
