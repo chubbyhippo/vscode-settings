@@ -42,16 +42,18 @@ esac
 echo "$settings_json_destination"
 echo "$keybindings_json_destination"
 
+RAW_SETTINGS_URL="https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main"
+
 # Download settings.json and keybindings.json using curl or wget
 if [ "$(command -v curl)" ]; then
   # Use curl if available
-  curl -k https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/settings.json -o "$settings_json_destination"
-  curl -k https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/keybindings.json -o "$keybindings_json_destination"
+  curl -k "$RAW_SETTINGS_URL/settings.json" -o "$settings_json_destination"
+  curl -k "$RAW_SETTINGS_URL/keybindings.json" -o "$keybindings_json_destination"
 elif [ "$(command -v wget)" ]; then
   # Use wget if available
-  wget https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/settings.json -P "$settings_json_destination"
-  wget https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/keybindings.json -P "$keybindings_json_destination"
+  wget "$RAW_SETTINGS_URL/settings.json" -P "$settings_json_destination"
+  wget "$RAW_SETTINGS_URL/keybindings.json" -P "$keybindings_json_destination"
 fi
 
 # Install basic VSCode extensions by executing a remote script
-curl -k https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-default-extensions.sh | /usr/bin/env sh
+curl -k "$RAW_SETTINGS_URL/install-default-extensions.sh" | /usr/bin/env sh
