@@ -1,6 +1,8 @@
+$RAW_SETTINGS_URL = "https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main"
+
 # settings.json
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/settings.json" -OutFile "$Home\AppData\Roaming\Code\User\settings.json"
+Invoke-WebRequest -Uri "$RAW_SETTINGS_URL/settings.json" -OutFile "$Home\AppData\Roaming\Code\User\settings.json"
 # keybindings.json
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/keybindings.json" -OutFile "$Home\AppData\Roaming\Code\User\keybindings.json"
+Invoke-WebRequest -Uri "$RAW_SETTINGS_URL/keybindings.json" -OutFile "$Home\AppData\Roaming\Code\User\keybindings.json"
 # install basic extensions
-Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main/install-extensions.sh | Invoke-Expression
+Invoke-RestMethod "$RAW_SETTINGS_URL/install-extensions.sh" | Invoke-Expression
