@@ -3,24 +3,28 @@
 = Install settings & keymappings
 
 == curl
+
 [source,shell,subs="attributes"]
 ----
 curl {raw_base_settings_url}/install.sh | /usr/bin/env sh
 ----
 
 == wget
+
 [source,shell,subs="attributes"]
 ----
 wget -qO - {raw_base_settings_url}/install.sh | /usr/bin/env sh
 ----
 
 == powershell
+
 [source,powershell,subs="attributes"]
 ----
 irm {raw_base_settings_url}/install.ps1 | iex
 ----
 
 == Install default extensions
+
 [source,shell,subs="attributes"]
 ----
 curl {raw_base_settings_url}/install-default-extensions.sh | /usr/bin/env sh
@@ -32,15 +36,18 @@ Invoke-RestMethod {raw_base_settings_url}/install-extensions.sh | Invoke-Express
 ----
 
 == Uninstall extensions
+
 [source,shell]
 ----
 code --list-extensions | xargs -L 1 code --uninstall-extension;code --list-extensions | xargs -L 1 code --uninstall-extension
 ----
 
 == languages
+
 link:https://github.com/chubbyhippo/vscode-settings/tree/main/extensions[link]
 
 == powershell
+
 [source,powershell]
 ----
 code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
