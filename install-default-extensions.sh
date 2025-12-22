@@ -26,3 +26,5 @@ code --force --install-extension redhat.vscode-xml
 code --force --install-extension mishkinf.goto-next-previous-member
 # rest client
 code --force --install-extension humao.rest-client
+# asciidoctor
+code --force --install-extension asciidoctor.asciidoctor-vscode
