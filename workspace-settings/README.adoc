@@ -1,0 +1,31 @@
+:raw_base_settings_url: https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main
+
+= workspace settings
+
+== clojure
+
+[source,shell,subs="attributes"]
+----
+mkdir -p .vscode && curl -k {raw_base_settings_url}/workspace-settings/clojure/settings.json -o .vscode/settings.json
+----
+
+== java
+
+[source,shell,subs="attributes"]
+----
+mkdir -p .vscode && curl -k {raw_base_settings_url}/workspace-settings/java/settings.json -o .vscode/settings.json
+----
+
+== javascript
+
+[source,shell,subs="attributes"]
+----
+mkdir -p .vscode && curl -k {raw_base_settings_url}/workspace-settings/javascript/settings.json -o .vscode/settings.json
+----
+
+== typescript
+
+[source,shell,subs="attributes"]
+----
+mkdir -p .vscode && curl -k {raw_base_settings_url}/workspace-settings/typescript/settings.json -o .vscode/settings.json
+----
