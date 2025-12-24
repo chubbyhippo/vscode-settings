@@ -8,7 +8,6 @@
 ----
 mkdir -p .vscode && curl -k {raw_base_settings_url}/workspace-settings/clojure/settings.json -o .vscode/settings.json
 ----
-
 == java
 
 [source,shell,subs="attributes"]
