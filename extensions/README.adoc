@@ -1,0 +1,93 @@
+:raw_base_settings_url: https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main
+
+= Install extensions
+
+== Uninstall extensions
+
+=== sh
+
+[source,shell]
+----
+code --list-extensions | xargs -L 1 code --uninstall-extension;code --list-extensions | xargs -L 1 code --uninstall-extension
+----
+
+=== powershell
+
+[source,powershell]
+----
+code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
+----
+
+== Install extensions
+
+=== default
+
+[source,shell,subs="attributes"]
+----
+curl {raw_base_settings_url}/install-default-extensions.sh | /usr/bin/env sh
+----
+
+[source,powershell,subs="attributes"]
+----
+Invoke-RestMethod {raw_base_settings_url}/install-extensions.sh | Invoke-Expression
+----
+
+=== clojure
+
+[source,shell,subs="attributes"]
+----
+curl {raw_base_settings_url}/extensions/clojure.sh | /usr/bin/env sh
+----
+
+[source,powershell,subs="attributes"]
+----
+Invoke-RestMethod {raw_base_settings_url}/extensions/clojure.sh | Invoke-Expression
+----
+
+=== go
+
+[source,shell,subs="attributes"]
+----
+curl {raw_base_settings_url}/extensions/go.sh | /usr/bin/env sh
+----
+
+[source,powershell,subs="attributes"]
+----
+Invoke-RestMethod {raw_base_settings_url}/extensions/go.sh | Invoke-Expression
+----
+
+=== java
+
+[source,shell,subs="attributes"]
+----
+curl {raw_base_settings_url}/extensions/java.sh | /usr/bin/env sh
+----
+
+[source,powershell,subs="attributes"]
+----
+Invoke-RestMethod {raw_base_settings_url}/extensions/java.sh | Invoke-Expression
+----
+
+=== javascript
+
+[source,shell,subs="attributes"]
+----
+curl {raw_base_settings_url}/extensions/javascript.sh | /usr/bin/env sh
+----
+
+[source,powershell,subs="attributes"]
+----
+Invoke-RestMethod {raw_base_settings_url}/extensions/javascript.sh | Invoke-Expression
+----
+
+=== rust
+
+[source,shell,subs="attributes"]
+----
+curl {raw_base_settings_url}/extensions/rust.sh | /usr/bin/env sh
+----
+
+[source,powershell,subs="attributes"]
+----
+Invoke-RestMethod {raw_base_settings_url}/extensions/rust.sh | Invoke-Expression
+----
