@@ -217,10 +217,6 @@
       "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     {
-      "before": ["<leader>", "b"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-    {
       "before": ["<leader>", "c", "a"],
       "commands": ["openEditors.closeAll"]
     },
