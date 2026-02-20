@@ -401,6 +401,10 @@
       "commands": ["workbench.action.files.openFolder"]
     },
     {
+      "before": ["<leader>", "a", "p"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
       "before": ["<leader>", "o", "t"],
       "commands": ["openInIntegratedTerminal"]
     },
