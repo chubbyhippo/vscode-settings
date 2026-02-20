@@ -217,6 +217,10 @@
       "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     {
+      "before": ["<leader>", "b", "i"],
+      "commands": [":ls"]
+    },
+    {
       "before": ["<leader>", "c", "a"],
       "commands": ["openEditors.closeAll"]
     },
