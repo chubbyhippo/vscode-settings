@@ -225,6 +225,10 @@
       "commands": [":ls"]
     },
     {
+      "before": ["<leader>", "b", "k"],
+      "commands": [":q"]
+    },
+    {
       "before": ["<leader>", "c", "a"],
       "commands": ["openEditors.closeAll"]
     },
