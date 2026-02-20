@@ -514,7 +514,10 @@
       "commands": ["workbench.action.unpinEditor"],
       "when": ["activeEditorIsPinned"]
     },
-
+    {
+      "before": ["<leader>", "w", "h"],
+      "after": ["<c-w>", "h"]
+    },
     {
       "before": ["<s-Tab>"],
       "after": ["g", "T"]
