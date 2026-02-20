@@ -535,6 +535,10 @@
       "commands": [":sp"]
     },
     {
+      "before": ["<leader>", "w", "v"],
+      "commands": [":vs"]
+    },
+    {
       "before": ["<s-Tab>"],
       "after": ["g", "T"]
     },
