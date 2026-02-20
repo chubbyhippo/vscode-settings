@@ -519,6 +519,10 @@
       "after": ["<c-w>", "h"]
     },
     {
+      "before": ["<leader>", "w", "j"],
+      "after": ["<c-w>", "j"]
+    },
+    {
       "before": ["<s-Tab>"],
       "after": ["g", "T"]
     },
