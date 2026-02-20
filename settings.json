@@ -531,6 +531,10 @@
       "after": ["<c-w>", "l"]
     },
     {
+      "before": ["<leader>", "w", "q"],
+      "commands": [":q"]
+    },
+    {
       "before": ["<leader>", "w", "s"],
       "commands": [":sp"]
     },
