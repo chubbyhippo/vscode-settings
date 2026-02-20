@@ -523,6 +523,10 @@
       "after": ["<c-w>", "j"]
     },
     {
+      "before": ["<leader>", "w", "l"],
+      "after": ["<c-w>", "l"]
+    },
+    {
       "before": ["<leader>", "w", "k"],
       "after": ["<c-w>", "k"]
     },
