@@ -531,8 +531,8 @@
       "after": ["<c-w>", "l"]
     },
     {
-      "before": ["<leader>", "w", "k"],
-      "after": ["<c-w>", "k"]
+      "before": ["<leader>", "w", "s"],
+      "commands": [":sp"]
     },
     {
       "before": ["<s-Tab>"],
