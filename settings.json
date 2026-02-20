@@ -397,7 +397,7 @@
       "commands": ["editor.action.organizeImports"]
     },
     {
-      "before": ["<leader>", "o", "p"],
+      "before": ["<leader>", "o", "P"],
       "commands": ["workbench.action.files.openFolder"]
     },
     {
