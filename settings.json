@@ -233,6 +233,13 @@
       "commands": ["openEditors.closeAll"]
     },
     {
+      "before": ["<leader>", "c", "f"],
+      "commands": [
+        "editor.action.formatDocument",
+        "calva-fmt.formatCurrentForm"
+      ]
+    },
+    {
       "before": ["<leader>", "c", "h"],
       "commands": ["references-view.showCallHierarchy"]
     },
