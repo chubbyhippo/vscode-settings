@@ -384,7 +384,7 @@
       ]
     },
     {
-      "before": ["<leader>", "m"],
+      "before": ["<leader>", "m", "i"],
       "commands": ["numberedBookmarks.listFromAllFiles"]
     },
     {
