@@ -157,6 +157,10 @@
       "commands": ["workbench.action.openEditorAtIndex4"]
     },
     {
+      "before": ["<leader>", "5"],
+      "commands": ["workbench.action.openEditorAtIndex5"]
+    },
+    {
       "before": ["<leader>", ".", "k"],
       "commands": ["workbench.action.openGlobalKeybindings"]
     },
