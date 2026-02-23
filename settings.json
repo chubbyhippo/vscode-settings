@@ -153,6 +153,10 @@
       "commands": ["workbench.action.openEditorAtIndex3"]
     },
     {
+      "before": ["<leader>", "4"],
+      "commands": ["workbench.action.openEditorAtIndex4"]
+    },
+    {
       "before": ["<leader>", ".", "k"],
       "commands": ["workbench.action.openGlobalKeybindings"]
     },
