@@ -28,3 +28,5 @@ code --force --install-extension mishkinf.goto-next-previous-member
 code --force --install-extension humao.rest-client
 # asciidoctor
 code --force --install-extension asciidoctor.asciidoctor-vscode
+# markdown execute
+code --force --install-extension hanskre.markdown-execute
