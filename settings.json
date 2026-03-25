@@ -699,6 +699,10 @@
       "after": ["n", "z", "z", "z", "v"]
     },
     {
+      "before": [",", "a", "t"],
+      "commands": ["jupyter-cell-tags.addTag"]
+    },
+    {
       "before": [",", "i", "c"],
       "commands": ["notebook.cell.insertCodeCellBelow"]
     },
