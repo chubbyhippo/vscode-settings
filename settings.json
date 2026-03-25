@@ -700,7 +700,7 @@
     },
     {
       "before": [",", "i", "c"],
-      "commands": ["jupyter.insertCellBelow"]
+      "commands": ["notebook.cell.insertCodeCellBelow"]
     },
     {
       "before": [",", "i", "m"],
