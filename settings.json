@@ -699,6 +699,10 @@
       "after": ["n", "z", "z", "z", "v"]
     },
     {
+      "before": [",", "k"],
+      "commands": ["jupyter.moveCellsUp"]
+    },
+    {
       "before": [",", "r", "a"],
       "commands": ["jupyter.runallcells"]
     },
