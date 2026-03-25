@@ -704,6 +704,10 @@
       "commands": ["jupyter-cell-tags.addTag"]
     },
     {
+      "before": [",", "d"],
+      "commands": ["notebook.cell.delete"]
+    },
+    {
       "before": [",", "i", "c"],
       "commands": ["notebook.cell.insertCodeCellBelow"]
     },
