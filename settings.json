@@ -699,7 +699,7 @@
       "after": ["n", "z", "z", "z", "v"]
     },
     {
-      "before": [",", "i", "c"],
+      "before": [",", "r", "r"],
       "commands": ["jupyter.runcurrentcell"]
     }
   ],
