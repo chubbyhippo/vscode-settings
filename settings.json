@@ -699,6 +699,10 @@
       "after": ["n", "z", "z", "z", "v"]
     },
     {
+      "before": [",", "i", "c"],
+      "commands": ["jupyter.insertCellBelow"]
+    },
+    {
       "before": [",", "j"],
       "commands": ["jupyter.moveCellsDown"]
     },
