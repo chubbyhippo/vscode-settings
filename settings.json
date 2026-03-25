@@ -703,7 +703,15 @@
       "commands": ["jupyter.insertCellBelow"]
     },
     {
+      "before": [",", "i", "m"],
+      "commands": ["notebook.cell.insertMarkdownCellBelow"]
+    },
+    {
       "before": [",", "j"],
+      "commands": ["jupyter.moveCellsDown"]
+    },
+    {
+      "before": [",", "m"],
       "commands": ["jupyter.moveCellsDown"]
     },
     {
