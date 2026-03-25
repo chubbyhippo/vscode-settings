@@ -728,7 +728,7 @@
     },
     {
       "before": [",", "r", "r"],
-      "commands": ["jupyter.runcurrentcell"]
+      "commands": ["notebook.cell.execute"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
