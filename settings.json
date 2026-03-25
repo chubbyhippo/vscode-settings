@@ -697,6 +697,10 @@
     {
       "before": ["n"],
       "after": ["n", "z", "z", "z", "v"]
+    },
+    {
+      "before": [",", "i", "c"],
+      "commands": ["jupyter.runcurrentcell"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
