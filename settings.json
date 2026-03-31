@@ -708,6 +708,10 @@
       "commands": ["notebook.cell.delete"]
     },
     {
+      "before": [",", "i", "C"],
+      "commands": ["notebook.cell.insertCodeCellAbove"]
+    },
+    {
       "before": [",", "i", "c"],
       "commands": ["notebook.cell.insertCodeCellBelow"]
     },
