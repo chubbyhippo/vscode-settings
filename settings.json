@@ -716,6 +716,10 @@
       "commands": ["notebook.cell.insertCodeCellBelow"]
     },
     {
+      "before": [",", "i", "M"],
+      "commands": ["notebook.cell.insertMarkdownCellAbove"]
+    },
+    {
       "before": [",", "i", "m"],
       "commands": ["notebook.cell.insertMarkdownCellBelow"]
     },
