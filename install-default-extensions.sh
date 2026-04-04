@@ -30,3 +30,5 @@ code --force --install-extension humao.rest-client
 code --force --install-extension asciidoctor.asciidoctor-vscode
 # markdown execute
 code --force --install-extension hanskre.markdown-execute
+# mise
+code --force --install-extension hverlin.mise-vscode
