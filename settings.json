@@ -235,6 +235,10 @@
       "commands": ["gradleDefaultProjectsView.focus"]
     },
     {
+      "before": ["<leader>", "a", "i"],
+      "commands": ["workbench.panel.chat"]
+    },
+    {
       "before": ["<leader>", "a", "k"],
       "commands": ["workbench.action.toggleScreencastMode"]
     },
