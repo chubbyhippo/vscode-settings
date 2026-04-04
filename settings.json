@@ -754,7 +754,7 @@
     },
     {
       "before": [",", "r", "a"],
-      "commands": ["jupyter.restartkernelandrunallcells"]
+      "commands": ["notebook.execute"]
     },
     {
       "before": [",", "r", "r"],
