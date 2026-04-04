@@ -232,7 +232,7 @@
     },
     {
       "before": ["<leader>", "a", "g"],
-      "commands": ["gradleDefaultProjectsView.focus"]
+      "commands": ["workbench.view.scm"]
     },
     {
       "before": ["<leader>", "a", "G"],
