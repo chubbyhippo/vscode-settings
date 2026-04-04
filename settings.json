@@ -388,6 +388,10 @@
       "commands": ["references-view.findReferences"]
     },
     {
+      "before": ["<leader>", "g", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
       "before": ["<leader>", "g", "i"],
       "commands": ["editor.action.goToImplementation"]
     },
