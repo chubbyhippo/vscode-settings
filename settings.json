@@ -49,7 +49,7 @@
     {
       "before": ["[", "e"],
       "commands": ["editor.action.marker.prev"]
-    }, 
+    },
     {
       "before": ["]", "d"],
       "commands": ["editor.action.accessibleDiffViewer.next"]
@@ -410,8 +410,9 @@
     {
       "before": ["<leader>", "h"],
       "commands": [
-        "workbench.action.closeSidebar",
-        "workbench.action.closePanel"
+        "workbench.action.closeAuxiliaryBar",
+        "workbench.action.closePanel",
+        "workbench.action.closeSidebar"
       ]
     },
     {
