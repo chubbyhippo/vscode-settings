@@ -235,6 +235,10 @@
       "commands": ["gradleDefaultProjectsView.focus"]
     },
     {
+      "before": ["<leader>", "a", "G"],
+      "commands": ["gradleDefaultProjectsView.focus"]
+    },
+    {
       "before": ["<leader>", "a", "i"],
       "commands": ["workbench.panel.chat"]
     },
