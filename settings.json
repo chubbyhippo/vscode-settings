@@ -512,6 +512,10 @@
       "commands": ["editor.action.refactor"]
     },
     {
+      "before": ["<leader>", "r", "m"],
+      "commands": ["markdown-execute.executeSelection"]
+    },
+    {
       "before": ["<leader>", "r", "n"],
       "commands": ["editor.action.rename"]
     },
