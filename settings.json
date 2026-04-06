@@ -471,6 +471,10 @@
       "commands": ["workbench.action.files.openFileFolder"]
     },
     {
+      "before": ["<leader>", "o", "P"],
+      "commands": ["markdown.showPreview"]
+    },
+    {
       "before": ["<leader>", "o", "t"],
       "commands": ["openInIntegratedTerminal"]
     },
