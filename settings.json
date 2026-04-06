@@ -263,6 +263,10 @@
       "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     {
+      "before": ["<leader>", "a", "T"],
+      "commands": ["workbench.view.testing.focus"]
+    },
+    {
       "before": ["<leader>", "b", "d"],
       "commands": [":q"]
     },
