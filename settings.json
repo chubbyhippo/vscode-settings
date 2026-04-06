@@ -467,6 +467,10 @@
       "commands": ["editor.action.organizeImports"]
     },
     {
+      "before": ["<leader>", "o", "p"],
+      "commands": ["workbench.action.files.openFileFolder"]
+    },
+    {
       "before": ["<leader>", "o", "t"],
       "commands": ["openInIntegratedTerminal"]
     },
