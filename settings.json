@@ -455,16 +455,16 @@
       "commands": ["revealFileInOS"]
     },
     {
+      "before": ["<leader>", "o", "F"],
+      "commands": ["workbench.action.files.openFolder"]
+    },
+    {
       "before": ["<leader>", "o", "f"],
       "commands": ["workbench.action.files.openFile"]
     },
     {
       "before": ["<leader>", "o", "i"],
       "commands": ["editor.action.organizeImports"]
-    },
-    {
-      "before": ["<leader>", "o", "P"],
-      "commands": ["workbench.action.files.openFolder"]
     },
     {
       "before": ["<leader>", "a", "p"],
