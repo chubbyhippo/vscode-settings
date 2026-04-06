@@ -2250,5 +2250,15 @@
     "key": "ctrl+alt+shift+h",
     "command": "workbench.action.decreaseViewSize",
     "when": "sideBarFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+h",
+    "command": "workbench.action.increaseViewSize",
+    "when": "auxiliaryBarFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+l",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "auxiliaryBarFocus"
   }
 ]
