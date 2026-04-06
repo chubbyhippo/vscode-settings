@@ -2163,7 +2163,7 @@
     "command": "workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
   },
-    {
+  {
     "key": "ctrl+j",
     "command": "workbench.action.focusBelowGroup",
     "when": "vim.mode == 'Normal'"
@@ -2240,5 +2240,15 @@
     "key": "ctrl+alt+down",
     "command": "-editor.action.insertCursorBelow",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+l",
+    "command": "workbench.action.increaseViewSize",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+h",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "filesExplorerFocus"
   }
 ]
