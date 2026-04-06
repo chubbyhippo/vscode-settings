@@ -2260,5 +2260,15 @@
     "key": "ctrl+alt+shift+l",
     "command": "workbench.action.decreaseViewSize",
     "when": "auxiliaryBarFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+k",
+    "command": "workbench.action.increaseViewSize",
+    "when": "panelFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+j",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "panelFocus"
   }
 ]
