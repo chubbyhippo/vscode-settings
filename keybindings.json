@@ -2244,11 +2244,11 @@
   {
     "key": "ctrl+alt+shift+l",
     "command": "workbench.action.increaseViewSize",
-    "when": "filesExplorerFocus"
+    "when": "sideBarFocus"
   },
   {
     "key": "ctrl+alt+shift+h",
     "command": "workbench.action.decreaseViewSize",
-    "when": "filesExplorerFocus"
+    "when": "sideBarFocus"
   }
 ]
