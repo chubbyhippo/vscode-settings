@@ -516,6 +516,10 @@
       "commands": ["editor.action.refactor"]
     },
     {
+      "before": ["<leader>", "r", "f"],
+      "commands": ["python.execInTerminal"]
+    },
+    {
       "before": ["<leader>", "r", "m"],
       "commands": ["markdown-execute.executeSelection"]
     },
