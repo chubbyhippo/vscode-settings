@@ -8,6 +8,7 @@
   "editor.mouseWheelZoom": true,
   "files.autoSave": "afterDelay",
   "git.autofetch": true,
+  "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "always",
   "http.proxyStrictSSL": false,
   "numberedBookmarks.navigateThroughAllFiles": "replace",
