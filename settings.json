@@ -299,6 +299,10 @@
       "commands": ["workbench.action.openGlobalKeybindings"]
     },
     {
+      "before": ["<leader>", "c", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
       "before": ["<leader>", "c", "s"],
       "commands": ["workbench.action.openSettingsJson"]
     },
