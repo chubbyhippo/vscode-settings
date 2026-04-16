@@ -2270,5 +2270,10 @@
     "key": "ctrl+alt+shift+j",
     "command": "workbench.action.decreaseViewSize",
     "when": "panelFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible"
   }
 ]
