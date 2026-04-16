@@ -2285,5 +2285,10 @@
     "key": "ctrl+n",
     "command": "selectNextCodeAction",
     "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
   }
 ]
