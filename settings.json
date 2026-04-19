@@ -1,4 +1,7 @@
 {
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "chat.commandCenter.enabled": false,
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
@@ -6,6 +9,9 @@
   "editor.lineHeight": 1.2,
   "editor.minimap.enabled": false,
   "editor.mouseWheelZoom": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
   "files.autoSave": "afterDelay",
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -13,27 +19,25 @@
   "http.proxyStrictSSL": false,
   "numberedBookmarks.navigateThroughAllFiles": "replace",
   "telemetry.telemetryLevel": "off",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-c>": true,
+    "<C-e>": false,
+    "<C-r>": true,
+    "<C-v>": true,
+    "<C-w>": false,
+    "<C-x>": false
+  },
   "vim.hlsearch": true,
   "vim.incsearch": true,
-  "vim.showcmd": true,
-  "vim.smartRelativeLine": true,
-  "vim.sneak": true,
-  "vim.surround": true,
-  "vim.useCtrlKeys": true,
-  "vim.useSystemClipboard": true,
-  "window.commandCenter": false,
-  "window.menuBarVisibility": "toggle",
-  "workbench.activityBar.iconClickBehavior": "toggle",
-  "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "GitHub Dark Default",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.tree.renderIndentGuides": "onHover",
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "after": ["<Esc>"],
+      "before": ["j", "j"]
     }
   ],
+  "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["]", "m"],
@@ -108,24 +112,24 @@
       "commands": ["numberedBookmarks.jumpToBookmark9"]
     },
     {
-      "before": ["+"],
-      "after": ["<c-w>", ">"]
+      "after": ["<c-w>", ">"],
+      "before": ["+"]
     },
     {
-      "before": ["-"],
-      "after": ["<c-w>", "-"]
+      "after": ["<c-w>", "-"],
+      "before": ["-"]
     },
     {
-      "before": ["<Tab>"],
-      "after": ["g", "t"]
+      "after": ["g", "t"],
+      "before": ["<Tab>"]
     },
     {
-      "before": ["<c-d>"],
-      "after": ["<c-d>", "z", "z"]
+      "after": ["<c-d>", "z", "z"],
+      "before": ["<c-d>"]
     },
     {
-      "before": ["<c-u>"],
-      "after": ["<c-u>", "z", "z"]
+      "after": ["<c-u>", "z", "z"],
+      "before": ["<c-u>"]
     },
     {
       "before": ["g", "i"],
@@ -200,8 +204,8 @@
       "commands": ["workbench.action.toggleZenMode"]
     },
     {
-      "before": ["<leader>", "<leader>"],
-      "after": ["<c-^>"]
+      "after": ["<c-^>"],
+      "before": ["<leader>", "<leader>"]
     },
     {
       "before": ["<leader>", "a", "P"],
@@ -614,16 +618,16 @@
       "when": ["activeEditorIsPinned"]
     },
     {
-      "before": ["<leader>", "w", "h"],
-      "after": ["<c-w>", "h"]
+      "after": ["<c-w>", "h"],
+      "before": ["<leader>", "w", "h"]
     },
     {
-      "before": ["<leader>", "w", "j"],
-      "after": ["<c-w>", "j"]
+      "after": ["<c-w>", "j"],
+      "before": ["<leader>", "w", "j"]
     },
     {
-      "before": ["<leader>", "w", "l"],
-      "after": ["<c-w>", "l"]
+      "after": ["<c-w>", "l"],
+      "before": ["<leader>", "w", "l"]
     },
     {
       "before": ["<leader>", "w", "q"],
@@ -638,32 +642,32 @@
       "commands": [":vs"]
     },
     {
-      "before": ["<s-Tab>"],
-      "after": ["g", "T"]
+      "after": ["g", "T"],
+      "before": ["<s-Tab>"]
     },
     {
-      "before": ["="],
-      "after": ["<c-w>", "+"]
+      "after": ["<c-w>", "+"],
+      "before": ["="]
     },
     {
-      "before": ["H"],
-      "after": ["^"]
+      "after": ["^"],
+      "before": ["H"]
     },
     {
-      "before": ["J"],
-      "after": ["}"]
+      "after": ["}"],
+      "before": ["J"]
     },
     {
-      "before": ["K"],
-      "after": ["{"]
+      "after": ["{"],
+      "before": ["K"]
     },
     {
-      "before": ["L"],
-      "after": ["$"]
+      "after": ["$"],
+      "before": ["L"]
     },
     {
-      "before": ["N"],
-      "after": ["N", "z", "z", "z", "v"]
+      "after": ["N", "z", "z", "z", "v"],
+      "before": ["N"]
     },
     {
       "before": ["["],
@@ -690,8 +694,8 @@
       "commands": ["workbench.action.compareEditor.nextChange"]
     },
     {
-      "before": ["_"],
-      "after": ["<c-w>", "<"]
+      "after": ["<c-w>", "<"],
+      "before": ["_"]
     },
     {
       "before": ["g", "i"],
@@ -738,8 +742,8 @@
       "commands": ["numberedBookmarks.toggleBookmark9"]
     },
     {
-      "before": ["n"],
-      "after": ["n", "z", "z", "z", "v"]
+      "after": ["n", "z", "z", "z", "v"],
+      "before": ["n"]
     },
     {
       "before": [",", "a", "t"],
@@ -790,58 +794,64 @@
       "commands": ["notebook.cell.execute"]
     }
   ],
+  "vim.showcmd": true,
+  "vim.smartRelativeLine": true,
+  "vim.sneak": true,
+  "vim.surround": true,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["H"],
-      "after": ["^"]
+      "after": ["^"],
+      "before": ["H"]
     },
     {
-      "before": ["L"],
-      "after": ["$"]
+      "after": ["$"],
+      "before": ["L"]
     },
     {
-      "before": ["J"],
-      "after": ["}"]
+      "after": ["}"],
+      "before": ["J"]
     },
     {
-      "before": ["K"],
-      "after": ["{"]
+      "after": ["{"],
+      "before": ["K"]
     },
     {
-      "before": ["`"],
-      "after": ["S", "`"]
+      "after": ["S", "`"],
+      "before": ["`"]
     },
     {
-      "before": ["'"],
-      "after": ["S", "'"]
+      "after": ["S", "'"],
+      "before": ["'"]
     },
     {
-      "before": ["\""],
-      "after": ["S", "\""]
+      "after": ["S", "\""],
+      "before": ["\""]
     },
     {
-      "before": ["("],
-      "after": ["S", "("]
+      "after": ["S", "("],
+      "before": ["("]
     },
     {
-      "before": [")"],
-      "after": ["S", ")"]
+      "after": ["S", ")"],
+      "before": [")"]
     },
     {
-      "before": ["["],
-      "after": ["S", "["]
+      "after": ["S", "["],
+      "before": ["["]
     },
     {
-      "before": ["]"],
-      "after": ["S", "]"]
+      "after": ["S", "]"],
+      "before": ["]"]
     },
     {
-      "before": ["{"],
-      "after": ["S", "{"]
+      "after": ["S", "{"],
+      "before": ["{"]
     },
     {
-      "before": ["}"],
-      "after": ["S", "}"]
+      "after": ["S", "}"],
+      "before": ["}"]
     },
     {
       "before": ["<leader>", "e", "c"],
@@ -926,21 +936,11 @@
       "commands": ["workbench.action.findInFiles"]
     }
   ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-b>": false,
-    "<C-c>": true,
-    "<C-e>": false,
-    "<C-r>": true,
-    "<C-v>": true,
-    "<C-w>": false,
-    "<C-x>": false
-  },
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.iconClickBehavior": "toggle",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.renderIndentGuides": "onHover"
 }
