@@ -228,10 +228,6 @@
       "commands": ["workbench.view.debug"]
     },
     {
-      "before": ["<leader>", "a", "d"],
-      "commands": ["workbench.view.debug"]
-    },
-    {
       "before": ["<leader>", "a", "e"],
       "commands": ["spring.mappings.focus"]
     },
