@@ -7,14 +7,12 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.lineHeight": 1.2,
-  "editor.minimap.enabled": false,
   "editor.mouseWheelZoom": true,
+  "explorer.autoReveal": true,
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
   "files.autoSave": "afterDelay",
-  "git.autofetch": true,
-  "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "always",
   "http.proxyStrictSSL": false,
   "numberedBookmarks.navigateThroughAllFiles": "replace",
@@ -116,7 +114,7 @@
       "before": ["+"]
     },
     {
-      "after": ["<c-w>", "-"],
+      "after": ["-", "<c-w>"],
       "before": ["-"]
     },
     {
@@ -148,530 +146,16 @@
       "commands": ["java.test.goToTestSubject"]
     },
     {
-      "before": ["<leader>", "1"],
-      "commands": ["workbench.action.openEditorAtIndex1"]
-    },
-    {
-      "before": ["<leader>", "2"],
-      "commands": ["workbench.action.openEditorAtIndex2"]
-    },
-    {
-      "before": ["<leader>", "3"],
-      "commands": ["workbench.action.openEditorAtIndex3"]
-    },
-    {
-      "before": ["<leader>", "4"],
-      "commands": ["workbench.action.openEditorAtIndex4"]
-    },
-    {
-      "before": ["<leader>", "5"],
-      "commands": ["workbench.action.openEditorAtIndex5"]
-    },
-    {
-      "before": ["<leader>", "6"],
-      "commands": ["workbench.action.openEditorAtIndex6"]
-    },
-    {
-      "before": ["<leader>", "7"],
-      "commands": ["workbench.action.openEditorAtIndex7"]
-    },
-    {
-      "before": ["<leader>", "8"],
-      "commands": ["workbench.action.openEditorAtIndex8"]
-    },
-    {
-      "before": ["<leader>", "9"],
-      "commands": ["workbench.action.openEditorAtIndex9"]
-    },
-    {
-      "before": ["<leader>", ".", "k"],
-      "commands": ["workbench.action.openGlobalKeybindings"]
-    },
-    {
-      "before": ["<leader>", ".", "p"],
-      "commands": ["workbench.view.extensions"]
-    },
-    {
-      "before": ["<leader>", ".", "r"],
-      "commands": ["update.restartToUpdate"]
-    },
-    {
-      "before": ["<leader>", ".", "s"],
-      "commands": ["workbench.action.openSettingsJson"]
-    },
-    {
-      "before": ["<leader>", ".", "z"],
-      "commands": ["workbench.action.toggleZenMode"]
-    },
-    {
-      "after": ["<c-^>"],
-      "before": ["<leader>", "<leader>"]
-    },
-    {
-      "before": ["<leader>", "a", "P"],
-      "commands": ["workbench.panel.markers.view.focus"]
-    },
-    {
-      "before": ["<leader>", "a", "T"],
-      "commands": ["testing.showMostRecentOutput"]
-    },
-    {
-      "before": ["<leader>", "a", "b"],
-      "commands": ["spring.beans.focus"]
-    },
-    {
-      "before": ["<leader>", "a", "c"],
-      "commands": ["workbench.view.scm"]
-    },
-    {
-      "before": ["<leader>", "a", "d"],
-      "commands": ["workbench.view.debug"]
-    },
-    {
-      "before": ["<leader>", "a", "e"],
-      "commands": ["spring.mappings.focus"]
-    },
-    {
-      "before": ["<leader>", "a", "g"],
-      "commands": ["workbench.view.scm"]
-    },
-    {
-      "before": ["<leader>", "a", "G"],
-      "commands": ["gradleDefaultProjectsView.focus"]
-    },
-    {
-      "before": ["<leader>", "a", "i"],
-      "commands": ["workbench.panel.chat"]
-    },
-    {
-      "before": ["<leader>", "a", "k"],
-      "commands": ["workbench.action.toggleScreencastMode"]
-    },
-    {
-      "before": ["<leader>", "a", "m"],
-      "commands": ["mavenProjects.focus"]
-    },
-    {
-      "before": ["<leader>", "a", "p"],
-      "commands": ["workbench.view.explorer"]
-    },
-    {
-      "before": ["<leader>", "a", "s"],
-      "commands": ["outline.focus"]
-    },
-    {
-      "before": ["<leader>", "a", "t"],
-      "commands": ["workbench.action.terminal.toggleTerminal"]
-    },
-    {
-      "before": ["<leader>", "a", "T"],
-      "commands": ["workbench.view.testing.focus"]
-    },
-    {
-      "before": ["<leader>", "b", "d"],
-      "commands": [":q"]
-    },
-    {
-      "before": ["<leader>", "b", "i"],
-      "commands": [":ls"]
-    },
-    {
-      "before": ["<leader>", "b", "k"],
-      "commands": [":q"]
-    },
-    {
-      "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["<leader>", "c", "A"],
-      "commands": ["openEditors.closeAll"]
-    },
-    {
-      "before": ["<leader>", "c", "f"],
-      "commands": [
-        "editor.action.formatDocument",
-        "calva-fmt.formatCurrentForm"
-      ]
-    },
-    {
-      "before": ["<leader>", "c", "h"],
-      "commands": ["references-view.showCallHierarchy"]
-    },
-    {
-      "before": ["<leader>", "c", "k"],
-      "commands": ["workbench.action.openGlobalKeybindings"]
-    },
-    {
-      "before": ["<leader>", "c", "o"],
-      "commands": ["workbench.action.closeOtherEditors"]
-    },
-    {
-      "before": ["<leader>", "c", "s"],
-      "commands": ["workbench.action.openSettingsJson"]
-    },
-    {
-      "before": ["<leader>", "c", "v"],
-      "commands": ["workbench.action.openSettings", "settings.switchToJSON"]
-    },
-    {
-      "before": ["<leader>", "d", "h"],
-      "commands": [":noh"]
-    },
-    {
-      "before": ["<leader>", "d", "m"],
-      "commands": ["numberedBookmarks.clearFromAllFiles"]
-    },
-    {
-      "before": ["<leader>", "e", "V"],
-      "commands": ["workbench.action.openSettings", "settings.switchToJSON"]
-    },
-    {
-      "before": ["<leader>", "e", "c"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.constant"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "e", "f"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.field"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "e", "m"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.function"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "e", "p"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.introduce"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "e", "v"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.variable"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "f", "f"],
-      "commands": ["workbench.action.findInFiles"]
-    },
-    {
-      "before": ["<leader>", "f", "o"],
-      "commands": [
-        "editor.action.formatDocument",
-        "calva-fmt.formatCurrentForm"
-      ]
-    },
-    {
-      "before": ["<leader>", "f", "s"],
-      "commands": ["workbench.action.toggleFullScreen"]
-    },
-    {
-      "before": ["<leader>", "f", "u"],
-      "commands": ["references-view.findReferences"]
-    },
-    {
-      "before": ["<leader>", "g", "g"],
-      "commands": ["workbench.view.scm"]
-    },
-    {
-      "before": ["<leader>", "g", "i"],
-      "commands": ["editor.action.goToImplementation"]
-    },
-    {
-      "before": ["<leader>", "g", "P"],
-      "commands": ["git.push"]
-    },
-    {
-      "before": ["<leader>", "g", "p"],
-      "commands": ["git.pull"]
-    },
-    {
-      "before": ["<leader>", "g", "s"],
-      "commands": ["java.action.navigateToSuperImplementation"]
-    },
-    {
-      "before": ["<leader>", "g", "t"],
-      "commands": ["java.test.goToTest"]
-    },
-    {
-      "before": ["<leader>", "g", "T"],
-      "commands": ["java.test.goToTestSubject"]
-    },
-    {
-      "before": ["<leader>", "h"],
-      "commands": [
-        "workbench.action.closeAuxiliaryBar",
-        "workbench.action.closePanel",
-        "workbench.action.closeSidebar"
-      ]
-    },
-    {
-      "before": ["<leader>", "i", "n"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.inline"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "m", "i"],
-      "commands": ["numberedBookmarks.listFromAllFiles"]
-    },
-    {
-      "before": ["<leader>", "n", "d"],
-      "commands": ["explorer.newFolder"]
-    },
-    {
-      "before": ["<leader>", "n", "f"],
-      "commands": ["explorer.newFile"]
-    },
-    {
-      "before": ["<leader>", "n", "t"],
-      "commands": ["workbench.action.terminal.new"]
-    },
-    {
-      "before": ["<leader>", "o", "e"],
-      "commands": ["revealFileInOS"]
-    },
-    {
-      "before": ["<leader>", "o", "F"],
-      "commands": ["workbench.action.files.openFolder"]
-    },
-    {
-      "before": ["<leader>", "o", "f"],
-      "commands": ["workbench.action.files.openFile"]
-    },
-    {
-      "before": ["<leader>", "o", "i"],
-      "commands": ["editor.action.organizeImports"]
-    },
-    {
-      "before": ["<leader>", "o", "l"],
-      "commands": ["outline.focus"]
-    },
-    {
-      "before": ["<leader>", "o", "p"],
-      "commands": ["workbench.action.files.openFileFolder"]
-    },
-    {
-      "before": ["<leader>", "o", "P"],
-      "commands": ["markdown.showPreview"]
-    },
-    {
-      "before": ["<leader>", "o", "t"],
-      "commands": ["openInIntegratedTerminal"]
-    },
-    {
-      "before": ["<leader>", "p", "p"],
-      "commands": ["editor.action.triggerParameterHints"]
-    },
-    {
-      "before": ["<leader>", "p", "i"],
-      "commands": ["editor.action.previewDeclaration"]
-    },
-    {
-      "before": ["<leader>", "p", "t"],
-      "commands": ["workbench.action.pinEditor"],
-      "when": ["!activeEditorIsPinned"]
-    },
-    {
-      "before": ["<leader>", "p", "h"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
-      "before": ["<leader>", "q"],
-      "commands": [":q"]
-    },
-    {
-      "before": ["<leader>", "r", "c"],
-      "commands": ["testing.coverageAtCursor"]
-    },
-    {
-      "before": ["<leader>", "r", "e"],
-      "commands": ["editor.action.refactor"]
-    },
-    {
-      "before": ["<leader>", "r", "f"],
-      "commands": ["python.execInTerminal"]
-    },
-    {
-      "before": ["<leader>", "r", "m"],
-      "commands": ["markdown-execute.executeSelection"]
-    },
-    {
-      "before": ["<leader>", "r", "n"],
-      "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["<leader>", "r", "r"],
-      "commands": ["testing.runAtCursor", "java.debug.runJavaFile"]
-    },
-    {
-      "before": ["<leader>", "r", "t"],
-      "commands": ["testing.runAtCursor"]
-    },
-    {
-      "before": ["<leader>", "r", "u"],
-      "commands": ["workbench.debug.welcome.focus"]
-    },
-    {
-      "before": ["<leader>", "r", "w"],
-      "commands": ["workbench.action.replaceInFiles"]
-    },
-    {
-      "before": ["<leader>", "s", "a"],
-      "commands": ["workbench.action.showCommands"]
-    },
-    {
-      "before": ["<leader>", "s", "d"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
-      "before": ["<leader>", "s", "f"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-    {
-      "before": ["<leader>", "s", "h"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
-      "before": ["<leader>", "s", "i"],
-      "commands": ["workbench.action.debug.stepInto"]
-    },
-    {
-      "before": ["<leader>", "s", "k"],
-      "commands": ["workbench.action.toggleScreencastMode"]
-    },
-    {
-      "before": ["<leader>", "s", "o"],
-      "commands": ["workbench.action.debug.stepOver"]
-    },
-    {
-      "before": ["<leader>", "s", "O"],
-      "commands": ["workbench.action.debug.stepOut"]
-    },
-    {
-      "before": ["<leader>", "s", "p"],
-      "commands": ["editor.action.triggerParameterHints"]
-    },
-    {
-      "before": ["<leader>", "s", "s"],
-      "commands": ["workbench.action.showAllSymbols"]
-    },
-    {
-      "before": ["<leader>", "s", "t"],
-      "commands": ["workbench.action.findInFiles"]
-    },
-    {
-      "before": ["<leader>", "t", "b"],
-      "commands": ["editor.debug.action.toggleBreakpoint"]
-    },
-    {
-      "before": ["<leader>", "t", "f"],
-      "commands": ["workbench.action.toggleFullScreen"]
-    },
-    {
-      "before": ["<leader>", "t", "k"],
-      "commands": ["workbench.action.toggleScreencastMode"]
-    },
-    {
-      "before": ["<leader>", "u", "p"],
-      "commands": ["workbench.action.unpinEditor"],
-      "when": ["activeEditorIsPinned"]
-    },
-    {
-      "after": ["<c-w>", "h"],
-      "before": ["<leader>", "w", "h"]
-    },
-    {
-      "after": ["<c-w>", "j"],
-      "before": ["<leader>", "w", "j"]
-    },
-    {
-      "after": ["<c-w>", "l"],
-      "before": ["<leader>", "w", "l"]
-    },
-    {
-      "before": ["<leader>", "w", "q"],
-      "commands": [":q"]
-    },
-    {
-      "before": ["<leader>", "w", "s"],
-      "commands": [":sp"]
-    },
-    {
-      "before": ["<leader>", "w", "v"],
-      "commands": [":vs"]
-    },
-    {
       "after": ["g", "T"],
       "before": ["<s-Tab>"]
     },
     {
-      "after": ["<c-w>", "+"],
+      "after": ["+", "<c-w>"],
       "before": ["="]
     },
     {
-      "after": ["^"],
-      "before": ["H"]
-    },
-    {
-      "after": ["}"],
-      "before": ["J"]
-    },
-    {
-      "after": ["{"],
-      "before": ["K"]
-    },
-    {
-      "after": ["$"],
-      "before": ["L"]
-    },
-    {
-      "after": ["N", "z", "z", "z", "v"],
+      "after": ["N", "v", "z", "z", "z"],
       "before": ["N"]
-    },
-    {
-      "before": ["["],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
-      "before": ["]"],
-      "commands": ["editor.action.marker.next"]
     },
     {
       "before": ["{"],
@@ -690,7 +174,7 @@
       "commands": ["workbench.action.compareEditor.nextChange"]
     },
     {
-      "after": ["<c-w>", "<"],
+      "after": ["<", "<c-w>"],
       "before": ["_"]
     },
     {
@@ -698,96 +182,48 @@
       "commands": ["editor.action.goToImplementation"]
     },
     {
-      "before": ["m", "0"],
+      "before": ["0", "m"],
       "commands": ["numberedBookmarks.toggleBookmark0"]
     },
     {
-      "before": ["m", "1"],
+      "before": ["1", "m"],
       "commands": ["numberedBookmarks.toggleBookmark1"]
     },
     {
-      "before": ["m", "2"],
+      "before": ["2", "m"],
       "commands": ["numberedBookmarks.toggleBookmark2"]
     },
     {
-      "before": ["m", "3"],
+      "before": ["3", "m"],
       "commands": ["numberedBookmarks.toggleBookmark3"]
     },
     {
-      "before": ["m", "4"],
+      "before": ["4", "m"],
       "commands": ["numberedBookmarks.toggleBookmark4"]
     },
     {
-      "before": ["m", "5"],
+      "before": ["5", "m"],
       "commands": ["numberedBookmarks.toggleBookmark5"]
     },
     {
-      "before": ["m", "6"],
+      "before": ["6", "m"],
       "commands": ["numberedBookmarks.toggleBookmark6"]
     },
     {
-      "before": ["m", "7"],
+      "before": ["7", "m"],
       "commands": ["numberedBookmarks.toggleBookmark7"]
     },
     {
-      "before": ["m", "8"],
+      "before": ["8", "m"],
       "commands": ["numberedBookmarks.toggleBookmark8"]
     },
     {
-      "before": ["m", "9"],
+      "before": ["9", "m"],
       "commands": ["numberedBookmarks.toggleBookmark9"]
     },
     {
-      "after": ["n", "z", "z", "z", "v"],
+      "after": ["n", "v", "z", "z", "z"],
       "before": ["n"]
-    },
-    {
-      "before": [",", "a", "t"],
-      "commands": ["jupyter-cell-tags.addTag"]
-    },
-    {
-      "before": [",", "d"],
-      "commands": ["notebook.cell.delete"]
-    },
-    {
-      "before": [",", "i", "C"],
-      "commands": ["notebook.cell.insertCodeCellAbove"]
-    },
-    {
-      "before": [",", "i", "c"],
-      "commands": ["notebook.cell.insertCodeCellBelow"]
-    },
-    {
-      "before": [",", "i", "M"],
-      "commands": ["notebook.cell.insertMarkdownCellAbove"]
-    },
-    {
-      "before": [",", "i", "m"],
-      "commands": ["notebook.cell.insertMarkdownCellBelow"]
-    },
-    {
-      "before": [",", "d"],
-      "commands": ["notebook.cell.delete"]
-    },
-    {
-      "before": [",", "j"],
-      "commands": ["jupyter.moveCellsDown"]
-    },
-    {
-      "before": [",", "m"],
-      "commands": ["jupyter.moveCellsDown"]
-    },
-    {
-      "before": [",", "k"],
-      "commands": ["jupyter.moveCellsUp"]
-    },
-    {
-      "before": [",", "r", "a"],
-      "commands": ["notebook.execute"]
-    },
-    {
-      "before": [",", "r", "r"],
-      "commands": ["notebook.cell.execute"]
     }
   ],
   "vim.showcmd": true,
@@ -798,138 +234,40 @@
   "vim.useSystemClipboard": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "after": ["^"],
-      "before": ["H"]
+      "before": ["}"],
+      "after": ["}", "S"]
     },
     {
-      "after": ["$"],
-      "before": ["L"]
+      "before": ["{"],
+      "after": ["{", "S"]
     },
     {
-      "after": ["}"],
-      "before": ["J"]
+      "before": ["]"],
+      "after": ["S", "]"]
     },
     {
-      "after": ["{"],
-      "before": ["K"]
+      "before": ["["],
+      "after": ["S", "["]
     },
     {
-      "after": ["S", "`"],
-      "before": ["`"]
+      "before": [")"],
+      "after": ["S", ")"]
     },
     {
-      "after": ["S", "'"],
-      "before": ["'"]
+      "before": ["("],
+      "after": ["S", "("]
     },
     {
-      "after": ["S", "\""],
-      "before": ["\""]
+      "before": ["\""],
+      "after": ["S", "\""]
     },
     {
-      "after": ["S", "("],
-      "before": ["("]
+      "before": ["'"],
+      "after": ["S", "'"]
     },
     {
-      "after": ["S", ")"],
-      "before": [")"]
-    },
-    {
-      "after": ["S", "["],
-      "before": ["["]
-    },
-    {
-      "after": ["S", "]"],
-      "before": ["]"]
-    },
-    {
-      "after": ["S", "{"],
-      "before": ["{"]
-    },
-    {
-      "after": ["S", "}"],
-      "before": ["}"]
-    },
-    {
-      "before": ["<leader>", "e", "c"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.constant"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "e", "f"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.field"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "e", "m"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.function"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "e", "p"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.introduce"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "e", "v"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.extract.variable"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "f", "f"],
-      "commands": ["workbench.action.findInFiles"]
-    },
-    {
-      "before": ["<leader>", "i", "n"],
-      "commands": [
-        {
-          "command": "editor.action.codeAction",
-          "args": {
-            "kind": "refactor.inline"
-          }
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "r", "e"],
-      "commands": ["editor.action.refactor"]
-    },
-    {
-      "before": ["<leader>", "r", "w"],
-      "commands": ["workbench.action.replaceInFiles"]
-    },
-    {
-      "before": ["<leader>", "s", "t"],
-      "commands": ["workbench.action.findInFiles"]
+      "before": ["`"],
+      "after": ["S", "`"]
     }
   ],
   "window.commandCenter": false,
