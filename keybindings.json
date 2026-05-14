@@ -2482,7 +2482,10 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
-    "commands": ["workbench.action.openSettings", "settings.switchToJSON"],
+    "commands": [
+      "workbench.action.openSettings",
+      "settings.switchToJSON"
+    ],
     "key": "space e shift+v",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
@@ -2877,6 +2880,11 @@
     "command": "notebook.cell.execute",
     "key": "space r r",
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+  },
+  {
+    "command": "rest-client.request",
+    "key": "space r r",
+    "when": "editorTextFocus && editorLangId == 'http'"
   },
   {
     "command": "workbench.action.terminal.runSelectedText",
