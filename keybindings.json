@@ -2789,5 +2789,15 @@
     "command": "dance.edit.newLine.below.insert",
     "key": "shift+a",
     "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.seek.leap",
+    "key": "shift+s",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.selections.select",
+    "key": "space v",
+    "when": "editorTextFocus && dance.mode == 'normal'"
   }
 ]

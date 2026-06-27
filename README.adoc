@@ -54,12 +54,25 @@ to match your `init.el` exactly:
 | `d` | delete (no yank)  | `dance.edit.delete`
 | `I` | open line above   | `dance.edit.newLine.above.insert`
 | `A` | open line below   | `dance.edit.newLine.below.insert`
+| `S` | label jump (avy)  | `dance.seek.leap` (Dance's built-in, leap.nvim style)
 |===
 
 Your `space` leader and the `ctrl+...` IntelliJ layer are untouched — they're
 just gated on `dance.mode == 'normal'` now instead of Vim's normal mode. Window
 focus stays on `ctrl+h/j/k/l`. Leave insert mode with `Esc` (the old `jj` trick
 was a VSCodeVim thing and is gone).
+
+The one leader addition is `space v` → Dance's regex *select-within*
+(`dance.selections.select`, Kakoune's old `s`) — handy for dropping a cursor on
+every match in a region. It moved here because `s` is now your meow cut.
+
+=== Multi-cursors
+
+You always have at least one selection, each with its own cursor; "multi-cursor"
+just means more than one. Add a cursor on the line below with `C` (above with
+`Shift+Alt+C`), split a multi-line selection into one cursor per line with
+`Alt+s`, drop a cursor on every regex match with `Alt+k` (filter) or `space v`
+(select-within), then collapse back to a single cursor with `,`.
 
 === Where it can't quite match meow
 
@@ -74,8 +87,6 @@ A few meow ideas have no real Dance equivalent, so these are the honest gaps:
   key, not on these.
 * *`o` = block* — meow grabs the enclosing pair in one key; the nearest in Dance
   is `Alt+a` (then pick an object), which costs a second keystroke.
-* *`S` = avy jump* — that's avy, not meow, and Dance has no built-in label jump
-  (add something like Jumpy if you miss it).
 
 == curl
 
