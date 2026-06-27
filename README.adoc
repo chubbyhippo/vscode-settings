@@ -1,6 +1,11 @@
 :raw_base_settings_url: https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main
 
-= Install settings & keymappings
+= My VS Code setup
+
+This is my personal VS Code configuration — settings, keybindings, and a handful
+of extensions I actually use. The centerpiece is modal editing that mirrors my
+Emacs `meow` setup, so my hands don't have to change gears when I hop between
+editors.
 
 == Modal editing, the meow way (Dance)
 
@@ -88,52 +93,70 @@ A few meow ideas have no real Dance equivalent, so these are the honest gaps:
 * *`o` = block* — meow grabs the enclosing pair in one key; the nearest in Dance
   is `Alt+a` (then pick an object), which costs a second keystroke.
 
-== curl
+== Getting set up
+
+There are two things to pull in: my settings + keybindings, and the extensions.
+Grab whichever line matches your shell — they all just download the files into
+your VS Code config and run the `code` CLI for you.
+
+=== Settings & keybindings
+
+This drops `settings.json` and `keybindings.json` into place.
 
 [source,shell,subs="attributes"]
+.curl
 ----
 curl {raw_base_settings_url}/install.sh | /usr/bin/env sh
 ----
 
-== wget
-
 [source,shell,subs="attributes"]
+.wget
 ----
 wget -qO - {raw_base_settings_url}/install.sh | /usr/bin/env sh
 ----
 
-== powershell
-
 [source,powershell,subs="attributes"]
+.PowerShell
 ----
 irm {raw_base_settings_url}/install.ps1 | iex
 ----
 
-== Install default extensions
+=== Extensions
+
+The default pack: Dance, the GitHub theme, Material icons, the Git tools,
+SonarLint, Prettier, and the rest of my everyday kit.
 
 [source,shell,subs="attributes"]
+.curl
 ----
 curl {raw_base_settings_url}/install-default-extensions.sh | /usr/bin/env sh
 ----
 
 [source,powershell,subs="attributes"]
+.PowerShell
 ----
-Invoke-RestMethod {raw_base_settings_url}/install-extensions.sh | Invoke-Expression
+Invoke-RestMethod {raw_base_settings_url}/install-default-extensions.sh | Invoke-Expression
 ----
 
-== Uninstall extensions
+Working in a particular language? There are smaller, per-language packs (Clojure,
+Go, Java, JavaScript, Python, Rust) in the
+link:https://github.com/chubbyhippo/vscode-settings/tree/main/extensions[extensions
+folder] — install only the ones you need.
+
+== Starting fresh
+
+Want a clean slate before reinstalling? This pulls out *every* extension you have.
+It runs the sweep twice on purpose — the second pass clears anything that was
+only hanging on as another extension's dependency.
 
 [source,shell]
+.sh
 ----
 code --list-extensions | xargs -L 1 code --uninstall-extension;code --list-extensions | xargs -L 1 code --uninstall-extension
 ----
-== powershell
 
 [source,powershell]
+.PowerShell
 ----
 code --list-extensions | foreach { code --uninstall-extension $_ };code --list-extensions | foreach { code --uninstall-extension $_ }
 ----
-== languages
-
-link:https://github.com/chubbyhippo/vscode-settings/tree/main/extensions[link]
-
