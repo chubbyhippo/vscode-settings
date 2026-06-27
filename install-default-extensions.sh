@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-# keybindings
-code --force --install-extension vscodevim.vim
+# modal editing — Dance (Kakoune/meow-style, selection-first)
+code --force --install-extension gregoire.dance
 # github theme
 code --force --install-extension GitHub.github-vscode-theme
 # material icon theme

@@ -2,6 +2,29 @@
 
 = Install settings & keymappings
 
+== Modal editing (Dance)
+
+These settings use the https://github.com/71/dance[Dance] extension for
+Kakoune/meow-style *selection-first* modal editing (matching the author's Emacs
+`meow` and IdeaVim setups): you select first, then act. `install-default-extensions.sh`
+installs it as `gregoire.dance`.
+
+NOTE: Dance overrides the editor's `type` command, so it is *not* compatible with
+VSCodeVim. If VSCodeVim was installed before, uninstall it
+(`code --uninstall-extension vscodevim.vim`).
+
+Movement mirrors `meow` out of the box: `h j k l` move (and collapse the
+selection), `H J K L` extend, `w e b` select by word, `x` selects lines,
+`f`/`t` find/till, `i`/`a` insert before/after, `u`/`U` undo/redo. The `space`
+leader (which-key style) and the IntelliJ-style `ctrl+...` layer in
+`keybindings.json` are gated on normal mode (`dance.mode == 'normal'`); window
+focus is `ctrl+h/j/k/l`.
+
+A few keys follow Kakoune rather than Emacs `meow`: `s` selects within (meow:
+cut), `g` opens the goto menu (meow: cancel selection), and `;` reduces the
+selection to its cursor (meow: reverse). Press `Esc` to leave insert mode (the
+old VSCodeVim `jj` shortcut no longer applies).
+
 == curl
 
 [source,shell,subs="attributes"]
