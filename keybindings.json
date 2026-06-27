@@ -2759,5 +2759,35 @@
     "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup",
     "key": "space space",
     "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.selections.changeDirection",
+    "key": ";",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.selections.reduce",
+    "key": "g",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.edit.yank-delete",
+    "key": "s",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.edit.delete",
+    "key": "d",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.edit.newLine.above.insert",
+    "key": "shift+i",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.edit.newLine.below.insert",
+    "key": "shift+a",
+    "when": "editorTextFocus && dance.mode == 'normal'"
   }
 ]

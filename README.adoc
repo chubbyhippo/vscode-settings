@@ -2,28 +2,80 @@
 
 = Install settings & keymappings
 
-== Modal editing (Dance)
+== Modal editing, the meow way (Dance)
 
-These settings use the https://github.com/71/dance[Dance] extension for
-Kakoune/meow-style *selection-first* modal editing (matching the author's Emacs
-`meow` and IdeaVim setups): you select first, then act. `install-default-extensions.sh`
+If you live in Emacs `meow` (or the IdeaVim setup), this should feel like home.
+These settings use the https://github.com/71/dance[Dance] extension, which
+brings Kakoune-style *selection-first* editing to VS Code: you select the thing
+first, then act on it — the opposite of Vim's verb-then-noun. `install-default-extensions.sh`
 installs it as `gregoire.dance`.
 
-NOTE: Dance overrides the editor's `type` command, so it is *not* compatible with
-VSCodeVim. If VSCodeVim was installed before, uninstall it
-(`code --uninstall-extension vscodevim.vim`).
+[NOTE]
+====
+Dance takes over the editor's `type` command, so it and VSCodeVim can't live
+together. If you had VSCodeVim before, see it off first:
 
-Movement mirrors `meow` out of the box: `h j k l` move (and collapse the
-selection), `H J K L` extend, `w e b` select by word, `x` selects lines,
-`f`/`t` find/till, `i`/`a` insert before/after, `u`/`U` undo/redo. The `space`
-leader (which-key style) and the IntelliJ-style `ctrl+...` layer in
-`keybindings.json` are gated on normal mode (`dance.mode == 'normal'`); window
-focus is `ctrl+h/j/k/l`.
+[source,shell]
+----
+code --uninstall-extension vscodevim.vim
+----
+====
 
-A few keys follow Kakoune rather than Emacs `meow`: `s` selects within (meow:
-cut), `g` opens the goto menu (meow: cancel selection), and `;` reduces the
-selection to its cursor (meow: reverse). Press `Esc` to leave insert mode (the
-old VSCodeVim `jj` shortcut no longer applies).
+=== It already feels like meow
+
+Most of the muscle memory carries straight over. These match `init.el` with no
+help from me:
+
+[cols="1,3"]
+|===
+| Keys | What they do
+
+| `h` `j` `k` `l` | move (and collapse the selection)
+| `H` `J` `K` `L` | extend the selection
+| `w` `e` `b`     | select by word
+| `x`             | select the line (press again to grow it downward)
+| `f` `t`         | find / till a character
+| `i` `a`         | insert before / after
+| `c`             | change
+| `y` `p`         | copy / paste
+| `u`             | undo
+|===
+
+A few keys default to Kakoune rather than meow, so `keybindings.json` remaps them
+to match your `init.el` exactly:
+
+[cols="1,2,3"]
+|===
+| Key | meow | now bound to
+
+| `;` | reverse selection | `dance.selections.changeDirection`
+| `g` | cancel selection  | `dance.selections.reduce`
+| `s` | kill (cut)        | `dance.edit.yank-delete`
+| `d` | delete (no yank)  | `dance.edit.delete`
+| `I` | open line above   | `dance.edit.newLine.above.insert`
+| `A` | open line below   | `dance.edit.newLine.below.insert`
+|===
+
+Your `space` leader and the `ctrl+...` IntelliJ layer are untouched — they're
+just gated on `dance.mode == 'normal'` now instead of Vim's normal mode. Window
+focus stays on `ctrl+h/j/k/l`. Leave insert mode with `Esc` (the old `jj` trick
+was a VSCodeVim thing and is gone).
+
+=== Where it can't quite match meow
+
+A few meow ideas have no real Dance equivalent, so these are the honest gaps:
+
+* *Expansion hints* (`1`–`9`, `0`) — meow's numbered selection-expand. Dance
+  reads digits as repeat counts instead.
+* *The grab system* (`G` `Y` `R` `z`) — meow's secondary "grab" selections.
+  Dance has multi-cursors, but not this workflow.
+* *Thing-objects* on `,` `.` `[` `]` — meow's inner / bounds / beginning /
+  end-of-thing. Dance has text objects too, but behind `Alt+a` plus a follow-up
+  key, not on these.
+* *`o` = block* — meow grabs the enclosing pair in one key; the nearest in Dance
+  is `Alt+a` (then pick an object), which costs a second keystroke.
+* *`S` = avy jump* — that's avy, not meow, and Dance has no built-in label jump
+  (add something like Jumpy if you miss it).
 
 == curl
 
