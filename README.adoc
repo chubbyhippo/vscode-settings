@@ -69,7 +69,7 @@ to match your `init.el` (the last group closes the old gaps — see the note bel
 | `z` | pop selection | `dance.selections.restore`
 | `G` | grab (save selection) | `dance.selections.save`
 | `w` `W` | mark word / WORD (whole word at point) | `dance.seek.object` inner word / WORD
-| `e` `b` | next / previous word (word only, no gap) | `seek.word`(`.backward`) + inner-word object
+| `e` `b` | next / previous word (word only, no gap) | word motion + inner-word object
 |===
 
 [NOTE]
