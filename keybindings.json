@@ -2888,12 +2888,37 @@
     "when": "editorTextFocus && dance.mode == 'normal'"
   },
   {
-    "command": "dance.seek.wordEnd.extend",
+    "args": {
+      "commands": [
+        "dance.seek.word",
+        {
+          "command": "dance.seek.object",
+          "args": {
+            "input": "[\\p{L}_\\d]+(?<after>[^\\S\\n]+)",
+            "inner": true
+          }
+        }
+      ]
+    },
+    "command": "runCommands",
     "key": "e",
     "when": "editorTextFocus && dance.mode == 'normal'"
   },
   {
-    "command": "dance.seek.word.extend.backward",
+    "args": {
+      "commands": [
+        "cursorWordEndLeft",
+        "cursorWordStartLeft",
+        {
+          "command": "dance.seek.object",
+          "args": {
+            "input": "[\\p{L}_\\d]+(?<after>[^\\S\\n]+)",
+            "inner": true
+          }
+        }
+      ]
+    },
+    "command": "runCommands",
     "key": "b",
     "when": "editorTextFocus && dance.mode == 'normal'"
   }
