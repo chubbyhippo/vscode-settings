@@ -60,11 +60,15 @@ to match your `init.el` (the last group closes the old gaps — see the note bel
 | `I` | open line above   | `dance.edit.newLine.above.insert`
 | `A` | open line below   | `dance.edit.newLine.below.insert`
 | `S` | label jump (avy)  | `dance.seek.leap` (Dance's built-in, leap.nvim style)
-| `o` `O` | expand / shrink by syntax (meow-block) | `editor.action.smartSelect.expand` / `…shrink`
+| `o` `O` | block / to-block (enclosing pair) | `dance.seek.enclosing` / `…extend`
 | `'` | repeat last change | `dance.history.repeat.edit`
 | `v` | visit (open search) | `dance.search.search`
 | `n` `N` | next / previous match | `dance.search.next` / `…previous`
 | `,` `.` | inner / around object | `dance.seek.askObject.inner` / `dance.seek.askObject`
+| `m` | join lines | `dance.edit.join`
+| `r` | replace (paste over selection) | `runCommands`: `dance.edit.delete` + `dance.edit.paste.before`
+| `z` | pop selection | `dance.selections.restore`
+| `G` | grab (save selection) | `dance.selections.save`
 |===
 
 [NOTE]
@@ -74,6 +78,11 @@ Dance's own object key (a bracket, quote, or letter — e.g. `(` `{` `[` `"` `w`
 not meow's `r s c g p l b` thing-letters — so it's close to meow, not identical.
 Since `,` is no longer "reduce", collapse several cursors back to one with `g`
 (cancel selection) or `Esc`. Beginning / end-of-thing stay on Dance's native `[` / `]`.
+
+`r` (replace) is composed as black-hole `delete` + `paste.before`, so it overwrites
+the selection with the clipboard without disturbing it. If your Dance version pastes
+oddly, swap it for the built-in `dance.edit.yank-replace` (which also copies the old
+text to a register).
 ====
 
 Your `space` leader and the `ctrl+...` IntelliJ layer are untouched — they're
@@ -95,16 +104,19 @@ just means more than one. Add a cursor on the line below with `C` (above with
 
 === Where it can't quite match meow
 
-Two meow ideas still have no real Dance equivalent — the honest remaining gaps:
+A few meow ideas still have no clean Dance equivalent — the honest remaining gaps:
 
 * *Expansion hints* (`1`–`9`, `0`) — meow's numbered selection-expand. Dance
   reads digits as repeat counts instead.
-* *The grab system* (`G` `Y` `R` `z`) — meow's secondary "grab" selections and
-  selection-ring pop. Dance has multi-cursors, but not this workflow.
+* *The keypad* — meow's `SPC` / `M-SPC` reaches the *entire* Emacs keymap live;
+  the `space` leader here is a fixed, hand-curated menu.
+* *`U` undo-in-selection* and the *swap / sync grab* (`R` `Y`) half of the grab
+  system. `G` (grab / save) and `z` (pop / restore) now work via Dance's
+  selection stack, but the swap/sync refinements don't map.
 
-Everything else now carries over — `o` / `O` expand/shrink by syntax (meow-block),
-`,` / `.` inner / around objects, `v` `n` `N` search (visit), and `'` repeat — see
-the remap table above.
+Everything else now carries over — `o` / `O` block (enclosing pair), `m` join,
+`,` / `.` inner / around objects, `z` pop-selection, `G` grab, `r` replace, and
+`v` `n` `N` search (visit) plus `'` repeat — see the remap table above.
 
 == Getting set up
 

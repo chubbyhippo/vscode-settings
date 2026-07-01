@@ -2809,12 +2809,12 @@
     "when": "editorTextFocus && dance.mode == 'normal'"
   },
   {
-    "command": "editor.action.smartSelect.expand",
+    "command": "dance.seek.enclosing",
     "key": "o",
     "when": "editorTextFocus && dance.mode == 'normal'"
   },
   {
-    "command": "editor.action.smartSelect.shrink",
+    "command": "dance.seek.enclosing.extend",
     "key": "shift+o",
     "when": "editorTextFocus && dance.mode == 'normal'"
   },
@@ -2841,6 +2841,32 @@
   {
     "command": "dance.seek.askObject",
     "key": ".",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.edit.join",
+    "key": "m",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.selections.restore",
+    "key": "z",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.selections.save",
+    "key": "shift+g",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "args": {
+      "commands": [
+        "dance.edit.delete",
+        "dance.edit.paste.before"
+      ]
+    },
+    "command": "runCommands",
+    "key": "r",
     "when": "editorTextFocus && dance.mode == 'normal'"
   }
 ]
