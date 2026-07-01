@@ -47,7 +47,7 @@ help from me:
 |===
 
 A few keys default to Kakoune rather than meow, so `keybindings.json` remaps them
-to match your `init.el` exactly:
+to match your `init.el` (the last group closes the old gaps — see the note below):
 
 [cols="1,2,3"]
 |===
@@ -60,7 +60,21 @@ to match your `init.el` exactly:
 | `I` | open line above   | `dance.edit.newLine.above.insert`
 | `A` | open line below   | `dance.edit.newLine.below.insert`
 | `S` | label jump (avy)  | `dance.seek.leap` (Dance's built-in, leap.nvim style)
+| `o` `O` | expand / shrink by syntax (meow-block) | `editor.action.smartSelect.expand` / `…shrink`
+| `'` | repeat last change | `dance.history.repeat.edit`
+| `v` | visit (open search) | `dance.search.search`
+| `n` `N` | next / previous match | `dance.search.next` / `…previous`
+| `,` `.` | inner / around object | `dance.seek.askObject.inner` / `dance.seek.askObject`
 |===
+
+[NOTE]
+====
+`,` / `.` now open Dance's object picker (inner / around); the *follow-up* key is
+Dance's own object key (a bracket, quote, or letter — e.g. `(` `{` `[` `"` `w` `p`),
+not meow's `r s c g p l b` thing-letters — so it's close to meow, not identical.
+Since `,` is no longer "reduce", collapse several cursors back to one with `g`
+(cancel selection) or `Esc`. Beginning / end-of-thing stay on Dance's native `[` / `]`.
+====
 
 Your `space` leader and the `ctrl+...` IntelliJ layer are untouched — they're
 just gated on `dance.mode == 'normal'` now instead of Vim's normal mode. Window
@@ -77,21 +91,20 @@ You always have at least one selection, each with its own cursor; "multi-cursor"
 just means more than one. Add a cursor on the line below with `C` (above with
 `Shift+Alt+C`), split a multi-line selection into one cursor per line with
 `Alt+s`, drop a cursor on every regex match with `Alt+k` (filter) or `space v`
-(select-within), then collapse back to a single cursor with `,`.
+(select-within), then collapse back to a single cursor with `g` (or `Esc`).
 
 === Where it can't quite match meow
 
-A few meow ideas have no real Dance equivalent, so these are the honest gaps:
+Two meow ideas still have no real Dance equivalent — the honest remaining gaps:
 
 * *Expansion hints* (`1`–`9`, `0`) — meow's numbered selection-expand. Dance
   reads digits as repeat counts instead.
-* *The grab system* (`G` `Y` `R` `z`) — meow's secondary "grab" selections.
-  Dance has multi-cursors, but not this workflow.
-* *Thing-objects* on `,` `.` `[` `]` — meow's inner / bounds / beginning /
-  end-of-thing. Dance has text objects too, but behind `Alt+a` plus a follow-up
-  key, not on these.
-* *`o` = block* — meow grabs the enclosing pair in one key; the nearest in Dance
-  is `Alt+a` (then pick an object), which costs a second keystroke.
+* *The grab system* (`G` `Y` `R` `z`) — meow's secondary "grab" selections and
+  selection-ring pop. Dance has multi-cursors, but not this workflow.
+
+Everything else now carries over — `o` / `O` expand/shrink by syntax (meow-block),
+`,` / `.` inner / around objects, `v` `n` `N` search (visit), and `'` repeat — see
+the remap table above.
 
 == Getting set up
 

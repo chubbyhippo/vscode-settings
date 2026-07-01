@@ -2276,10 +2276,13 @@
     "when": "editorTextFocus && dance.mode == 'normal'"
   },
   {
-    "commands": [
-      "workbench.action.openSettings",
-      "settings.switchToJSON"
-    ],
+    "args": {
+      "commands": [
+        "workbench.action.openSettings",
+        "settings.switchToJSON"
+      ]
+    },
+    "command": "runCommands",
     "key": "space e shift+v",
     "when": "editorTextFocus && dance.mode == 'normal'"
   },
@@ -2798,6 +2801,46 @@
   {
     "command": "dance.selections.select",
     "key": "space v",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.history.repeat.edit",
+    "key": "'",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "editor.action.smartSelect.expand",
+    "key": "o",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "editor.action.smartSelect.shrink",
+    "key": "shift+o",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.search.search",
+    "key": "v",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.search.next",
+    "key": "n",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.search.previous",
+    "key": "shift+n",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.seek.askObject.inner",
+    "key": ",",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "command": "dance.seek.askObject",
+    "key": ".",
     "when": "editorTextFocus && dance.mode == 'normal'"
   }
 ]
