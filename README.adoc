@@ -37,7 +37,6 @@ help from me:
 
 | `h` `j` `k` `l` | move (and collapse the selection)
 | `H` `J` `K` `L` | extend the selection
-| `w` `e` `b`     | select by word
 | `x`             | select the line (press again to grow it downward)
 | `f` `t`         | find / till a character
 | `i` `a`         | insert before / after
@@ -69,6 +68,8 @@ to match your `init.el` (the last group closes the old gaps — see the note bel
 | `r` | replace (paste over selection) | `runCommands`: `dance.edit.delete` + `dance.edit.paste.before`
 | `z` | pop selection | `dance.selections.restore`
 | `G` | grab (save selection) | `dance.selections.save`
+| `w` `W` | mark word / WORD (whole word at point) | `dance.seek.object` inner word / WORD
+| `e` `b` | next / previous word (word only, no gap) | `seek.word`(`.backward`) + inner-word object
 |===
 
 [NOTE]
@@ -113,6 +114,10 @@ A few meow ideas still have no clean Dance equivalent — the honest remaining g
 * *`U` undo-in-selection* and the *swap / sync grab* (`R` `Y`) half of the grab
   system. `G` (grab / save) and `z` (pop / restore) now work via Dance's
   selection stack, but the swap/sync refinements don't map.
+* *Word grow-arming* — in meow, `w` then `e`/`b` *grows* the selection word by
+  word. Here `w`/`W` grab the word cleanly and `e`/`b` select the next/previous
+  word, but they don't extend an existing `w` selection (armed-grow needs the kind
+  of stateful script that Dance can't run).
 
 Everything else now carries over — `o` / `O` block (enclosing pair), `m` join,
 `,` / `.` inner / around objects, `z` pop-selection, `G` grab, `r` replace, and

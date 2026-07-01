@@ -2868,5 +2868,57 @@
     "command": "runCommands",
     "key": "r",
     "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "args": {
+      "input": "[\\p{L}_\\d]+(?<after>[^\\S\\n]+)",
+      "inner": true
+    },
+    "command": "dance.seek.object",
+    "key": "w",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "args": {
+      "input": "[\\S]+(?<after>[^\\S\\n]+)",
+      "inner": true
+    },
+    "command": "dance.seek.object",
+    "key": "shift+w",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "args": {
+      "commands": [
+        "dance.seek.word",
+        {
+          "command": "dance.seek.object",
+          "args": {
+            "input": "[\\p{L}_\\d]+(?<after>[^\\S\\n]+)",
+            "inner": true
+          }
+        }
+      ]
+    },
+    "command": "runCommands",
+    "key": "e",
+    "when": "editorTextFocus && dance.mode == 'normal'"
+  },
+  {
+    "args": {
+      "commands": [
+        "dance.seek.word.backward",
+        {
+          "command": "dance.seek.object",
+          "args": {
+            "input": "[\\p{L}_\\d]+(?<after>[^\\S\\n]+)",
+            "inner": true
+          }
+        }
+      ]
+    },
+    "command": "runCommands",
+    "key": "b",
+    "when": "editorTextFocus && dance.mode == 'normal'"
   }
 ]
