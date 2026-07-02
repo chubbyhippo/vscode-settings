@@ -63,33 +63,151 @@ to match your `init.el` (the last group closes the old gaps — see the note bel
 | `'` | repeat last change | `dance.history.repeat.edit`
 | `v` | visit (open search) | `dance.search.search`
 | `n` `N` | next / previous match | `dance.search.next` / `…previous`
-| `,` `.` | inner / around object | `dance.seek.askObject.inner` / `dance.seek.askObject`
+| `,` `.` | inner / around object — with meow's thing letters (see note) | `dance.seek.askObject.inner` / `dance.seek.askObject`
 | `m` | join lines | `dance.edit.join`
 | `r` | replace (paste over selection) | `runCommands`: `dance.edit.delete` + `dance.edit.paste.before`
 | `z` | pop selection | `dance.selections.restore`
 | `G` | grab (save selection) | `dance.selections.save`
 | `w` `W` | mark word / WORD (whole word at point) | `dance.seek.object` inner word / WORD
-| `e` `b` | next / previous word (move and select) | word motion + inner-word object
+| `e` `b` | next / previous word (move and select); *with a selection they grow it* word by word, like meow's expandable word selections | word motion + inner-word object; `dance.seek.wordEnd.extend` / `dance.seek.word.extend.backward` when `editorHasSelection`
+| `E` `B` | next / previous symbol (WORD); grow when a selection exists | WORD motion + inner-WORD object; `.ws.extend` variants
+| `1`–`9` `0` | meow-expand: with a selection, a digit extends it that many lines down (`0` = 10) — the relative gutter numbers are the expand guide, exactly like the IdeaVim setup. Without a selection digits stay Dance counts (`3j`). | `dance.select.line.below.extend` + count
+| `-` | pull the expansion back one line | `dance.select.line.above.extend`
+| `q` | quit (close) the editor | `workbench.action.closeActiveEditor`
+| `X` | goto line (`meow-goto-line`) | `workbench.action.gotoLine`
+| `Q` | goto line (`avy-goto-line` stand-in) | `workbench.action.gotoLine`
 |===
 
 [NOTE]
 ====
-`,` / `.` now open Dance's object picker (inner / around); the *follow-up* key is
-Dance's own object key (a bracket, quote, or letter — e.g. `(` `{` `[` `"` `w` `p`),
-not meow's `r s c g p l b` thing-letters — so it's close to meow, not identical.
+`,` / `.` open Dance's object picker (inner / around), and `settings.json` now
+rewrites that menu (`dance.menus.object`) to meow's `meow-char-thing-table`:
+`r` round `s` square `c` curly `g` string `p` paragraph `l` line `b` buffer
+`e` symbol `.` sentence — plus `q`/`Q` single/grave quotes, `a` angles, `i`
+indent, `n` number, `u` argument, space whitespace. The raw pair characters
+also work (`,(` `,[` `,{` `,"`), since each entry lists them as alternate keys.
+`d`/defun has no VS Code equivalent — use `,c` / `.c` for the enclosing braces,
+same as the IdeaVim setup. Beginning / end-of-thing stay on Dance's native
+`[` / `]`, and they understand the same letters.
+
 Since `,` is no longer "reduce", collapse several cursors back to one with `g`
-(cancel selection) or `Esc`. Beginning / end-of-thing stay on Dance's native `[` / `]`.
+(cancel selection) or `Esc`.
 
 `r` (replace) is composed as black-hole `delete` + `paste.before`, so it overwrites
 the selection with the clipboard without disturbing it. If your Dance version pastes
 oddly, swap it for the built-in `dance.edit.yank-replace` (which also copies the old
 text to a register).
+
+Digit-expand can't tell word-wise from line-wise selections (VS Code has no
+"linewise" context), so digits always extend by *lines*; grow word-wise
+selections with `e` / `b` instead — that pairing covers both meow expansion
+axes.
 ====
 
-Your `space` leader and the `ctrl+...` IntelliJ layer are untouched — they're
-just gated on `dance.mode == 'normal'` now instead of Vim's normal mode. Window
-focus stays on `ctrl+h/j/k/l`. Leave insert mode with `Esc` (the old `jj` trick
-was a VSCodeVim thing and is gone).
+Leave insert mode with `Esc` (the old `jj` trick was a VSCodeVim thing and is
+gone). Window focus stays on `ctrl+h/j/k/l` in normal mode.
+
+=== The leader is the Emacs / Meow keypad
+
+The `space` leader now mirrors how Meow's keypad reaches the Emacs keymap in
+`init.el`, exactly like the IdeaVim setup: press the same keys after `space`
+that you'd press after `SPC` in Emacs. `SPC x f` = `C-x C-f` = find-file,
+`SPC c f` = `C-c f`, `SPC m x` = `M-x`. Whatever has no dedicated key is one
+`M-x` away: `space m x` (or `alt+x`, or `shift shift`) opens the Command
+Palette.
+
+[cols="1,2,2",options="header"]
+|===
+| Keys | Emacs | VS Code
+
+3+| *`SPC x` — `C-x`: files · buffers · windows*
+| `x f` | `C-x C-f` find-file | Quick Open
+| `x s` | `C-x C-s` save | Save All
+| `x b` | consult-buffer | open editors, most recently used
+| `x k` | kill-buffer | close editor
+| `x d` | dired | Explorer view
+| `x g` / `x v` | magit / vc | Source Control view
+| `x o` | other-window | focus next group
+| `x u` | vundo (undo history) | Timeline view
+| `x c` | `C-x C-c` | close folder
+| `x 0` / `x 1` | delete-window / delete-other-windows | join groups / single layout
+| `x 2` / `x 3` | split below / right | split down / split right
+
+3+| *`SPC x p` — `C-x p`: project*
+| `x p f` / `x p b` | project find-file / buffer | Quick Open / MRU editors
+| `x p g` / `x p r` | project grep / replace | Find / Replace in Files
+| `x p c` | project-compile | run build task
+
+3+| *`SPC c` — `C-c`: the personal commands (`= M-m`)*
+| `c f` / `c s` / `c k` / `c b` | find-file / save / kill-buffer / buffers | Quick Open / Save All / close / MRU editors
+| `c r` | `C-c r` consult-ripgrep | Find in Files
+| `c e` | `C-c e` expreg-expand | expand selection
+| `c c` | `C-c c` org-capture | new untitled file
+| `c l` | `C-c l` org-store-link | copy relative path
+| `c g` | `C-c M-g` magit-file-dispatch | Source Control view
+| `c v` | edit this config | open `keybindings.json`
+| `c j w` / `c j c` / `c j l` | `C-c j` avy jumps | Dance leap / leap / goto line
+
+3+| *`SPC m` — `M-`: meta*
+| `m x` | `M-x` | Command Palette
+| `m o` | `M-o` avy-goto-char-timer | `dance.seek.leap`
+| `m r` / `m R` | `M-r` expreg-expand / contract | expand / shrink selection
+| `m .` | `M-.` embark-dwim | go to definition
+| `m g` | `M-g g` goto-line | Go to Line
+| `m s r` / `m s L` | `M-s r` consult-ripgrep | Find in Files
+| `m s l` / `m s s` | `M-s l` consult-line | Find in file
+| `m s o` | `M-s o` consult-outline | Go to Symbol
+
+3+| *`SPC w` — the window map (Emacs `C-c w`)*
+| `w v` / `w s` | split right / below | split right / down
+| `w d` | delete-window | join two groups
+| `w D` / `w m` | delete-other-windows | single-column layout
+| `w w` / `w W` | other-window / swap | focus next group / move editor to next group
+| `w h j k l` | windmove focus | focus left/below/above/right group
+| `w H J K L` | windmove swap | move editor left/below/above/right
+| `w b` | balance-windows | even editor widths
+| `w i` `w =` / `w o` `w -` / `w u` `w 0` | text-scale in / out / reset | editor font zoom in / out / reset
+|===
+
+Direct extras, same as the IdeaVim leader: `space enter` ≈ embark-act →
+quick fix, `space /` toggles the line comment, `space b b` = consult-buffer
+(MRU editors), `space space` = alternate file, and `space s s` is now
+consult-line (Find in file; Go to Symbol in Workspace moved to `space s S`).
+Two `C-c` keys were repurposed for the keypad: format-document moved off
+`space c f` (still on `space f o` and `ctrl+alt+l`), and settings JSON moved
+off `space c s` (still on `space . s`).
+
+=== Emacs chords — the `C-` / `M-` layer
+
+In the IntelliJ setup every Emacs editing chord is routed to the IDE's Emacs
+keymap; the same chords now work here (in insert mode and, where sensible,
+everywhere):
+
+* `C-f` / `C-b` / `C-n` / `C-p` — char / line motion (`C-n`/`C-p` also walk
+  the completion popup and Quick Open lists, like corfu / vertico)
+* `C-a` / `C-e` — line start / end
+* `C-d` — delete char, `M-d` — delete word, `M-f` / `M-b` — word motion (insert mode)
+* `C-k` — kill to end of line
+* `C-w` / `M-w` — cut / copy the selection (insert mode for `M-w`), `C-y` — yank (paste)
+* `C-s` / `C-r` — incremental search: open Find, then `C-s` / `C-r` walk the
+  matches while the find input has focus
+* `C-l` — recenter the view on the cursor
+* `M-<` / `M->` — buffer start / end
+* `M-x` — Command Palette, `M-o` — leap (avy), `M-r` / `M-R` — expand / contract
+  selection (expreg), `M-.` — go to definition (embark-dwim), `M-;` — comment,
+  `M-%` — find & replace
+* `C-.` ≈ embark-act — quick fix / code actions (also `alt+enter` and `space enter`)
+* `C-z` / `C-S-z` — undo / redo, as in `init.el`
+
+Deliberate departures that this replaced (all still reachable elsewhere):
+`ctrl+s` no longer saves (auto-save is on; `space x s` / `space c s` save all),
+`ctrl+y` no longer deletes lines (`x` `s` kills a line the meow way),
+`ctrl+b` no longer goes to definition (use `alt+.`, `f4`, or `space m .`),
+`ctrl+a` no longer selects all (use `,b` — inner buffer), and in insert mode
+`ctrl+k` / `ctrl+l` are kill-line / recenter instead of up / right (`ctrl+p` /
+`ctrl+n` / `ctrl+f` cover movement). `ctrl+x` stays cut, so the real `C-x`
+*chords* don't exist — the `space x` keypad group is the substitute, exactly as
+in the IdeaVim setup.
 
 The one leader addition is `space v` → Dance's regex *select-within*
 (`dance.selections.select`, Kakoune's old `s`) — handy for dropping a cursor on
@@ -105,23 +223,31 @@ just means more than one. Add a cursor on the line below with `C` (above with
 
 === Where it can't quite match meow
 
-A few meow ideas still have no clean Dance equivalent — the honest remaining gaps:
+The few meow ideas that still have no clean equivalent — the honest remaining gaps:
 
-* *Expansion hints* (`1`–`9`, `0`) — meow's numbered selection-expand. Dance
-  reads digits as repeat counts instead.
+* *Expansion hint overlays* — meow paints the numbered targets in the buffer.
+  Digit-expand itself works now (select, then press a digit), but the only
+  visible guide is the relative line-number gutter, and digits always extend by
+  *lines* (grow word-wise with `e` / `b` — VS Code has no "linewise selection"
+  context to switch on, the trick IdeaVim's `mode() ==# "V"` pulls off).
 * *The keypad* — meow's `SPC` / `M-SPC` reaches the *entire* Emacs keymap live;
-  the `space` leader here is a fixed, hand-curated menu.
+  the `space` leader here mirrors the same `x` / `c` / `m` / `w` groups but is
+  still a fixed, hand-curated menu. `M-SPC` from insert mode has no equivalent.
 * *`U` undo-in-selection* and the *swap / sync grab* (`R` `Y`) half of the grab
-  system. `G` (grab / save) and `z` (pop / restore) now work via Dance's
-  selection stack, but the swap/sync refinements don't map.
-* *Word grow-arming* — meow's `w` then `e`/`b` *grows* the selection word by word.
-  Here `e`/`b` move and select a single word forward / backward instead; extending an
-  existing `w` selection needs the stateful arm-and-grow script Dance can't run in a
-  keybinding.
+  system. `G` (grab / save) and `z` (pop / restore) work via Dance's selection
+  stack, but the swap/sync refinements don't map. `U` is plain redo instead,
+  like the IdeaVim setup.
+* *`M-y` / consult-yank-pop* — VS Code has no clipboard ring; install a
+  clipboard-history extension if you miss it.
+* *which-key* — the leader menu shows nothing while you type. The
+  `VSpaceCode.whichkey` extension can fill that hole, but it's a different
+  leader mechanism, so it's not wired in here.
 
 Everything else now carries over — `o` / `O` block (enclosing pair), `m` join,
-`,` / `.` inner / around objects, `z` pop-selection, `G` grab, `r` replace, and
-`v` `n` `N` search (visit) plus `'` repeat — see the remap table above.
+`,` / `.` inner / around objects with meow's thing letters, digit expand,
+word-grow on `e` / `b`, `z` pop-selection, `G` grab, `r` replace, `q` quit,
+`X` goto-line, `v` `n` `N` search (visit), `'` repeat, and the full
+`SPC x` / `SPC c` / `SPC m` / `SPC w` keypad — see the tables above.
 
 == Getting set up
 
