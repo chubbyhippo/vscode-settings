@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 code --force --install-extension ms-python.python
 code --force --install-extension ms-python.black-formatter

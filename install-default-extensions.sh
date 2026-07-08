@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # github theme
 code --force --install-extension GitHub.github-vscode-theme

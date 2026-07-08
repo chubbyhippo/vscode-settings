@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # prettier
 code --force --install-extension esbenp.prettier-vscode

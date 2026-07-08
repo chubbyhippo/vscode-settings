@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # java
 code --force --install-extension vscjava.vscode-java-pack

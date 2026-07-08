@@ -1,3 +1,3 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 code --force --install-extension betterthantomorrow.calva

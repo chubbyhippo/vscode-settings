@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # Initialize destination variable for settings.json
 settings_json_destination=""
