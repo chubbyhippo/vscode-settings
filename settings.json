@@ -15,6 +15,7 @@
   "http.proxyStrictSSL": false,
   "numberedBookmarks.navigateThroughAllFiles": "replace",
   "telemetry.telemetryLevel": "off",
+  "terminal.integrated.commandsToSkipShell": ["codemeow.toolWindowEscape"],
   "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
   "workbench.activityBar.iconClickBehavior": "toggle",
