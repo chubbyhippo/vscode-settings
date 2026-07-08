@@ -59,6 +59,22 @@ everything else stays stock VS Code.
 > code --uninstall-extension gregoire.dance
 > ```
 
+## What `settings.json` sets
+
+Nothing exotic — looks, quiet chrome, and a few quality-of-life defaults:
+
+- **Looks**: GitHub Dark Default theme, Material icon theme, JetBrains Mono
+  Nerd Font at 13px with ligatures, relative line numbers, tree indent
+  guides only on hover
+- **Quiet chrome**: menu bar hidden behind `Alt`, activity bar moved to the
+  top (click its icon to collapse the side bar), command center off,
+  telemetry off
+- **Quality of life**: auto-save after a delay, `Ctrl`+scroll font zoom,
+  the Explorer follows the active file, git repositories detected in parent
+  folders, Prettier formats JSONC, numbered bookmarks navigate across all
+  files, and `http.proxyStrictSSL` is off so the `code` CLI survives a
+  TLS-inspecting corporate proxy
+
 ## Getting set up
 
 Two things to pull in from this repo: my settings, and the extensions
@@ -90,9 +106,21 @@ irm https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/mai
 
 ### Extensions
 
-The default pack: the GitHub theme, Material icons, the Git tools, SonarLint,
-Prettier, and the rest of my everyday kit — modal editing is codemeow,
-installed separately above.
+The default pack, exactly what `install-default-extensions.sh` installs:
+
+| What for | Extension |
+| --- | --- |
+| Theme + icons | GitHub Theme, Material Icon Theme |
+| Code quality | SonarLint |
+| Git | Neo Git Graph, GitLens |
+| Bookmarks | Numbered Bookmarks |
+| Containers / WSL | Docker, Remote - WSL |
+| Formatting | Prettier |
+| Config files | YAML, XML (Red Hat) |
+| Navigation | Goto Next/Previous Member |
+| HTTP | REST Client |
+| Docs | AsciiDoctor |
+| Toolchains | mise |
 
 curl:
 
@@ -108,8 +136,14 @@ Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/vscode-settings/
 
 Working in a particular language? There are smaller, per-language packs
 (Clojure, Go, Java, JavaScript, Python, Rust) in the
-[extensions folder](https://github.com/chubbyhippo/vscode-settings/tree/main/extensions) —
-install only the ones you need.
+[extensions folder](extensions/README.md) — install only the ones you need.
+
+### Workspace settings (per project)
+
+The [workspace-settings folder](workspace-settings/README.md) has small
+per-language `settings.json` templates (Clojure, Java, JavaScript,
+TypeScript) — each is a one-liner away from becoming the current project's
+`.vscode/settings.json`.
 
 ## Starting fresh
 
