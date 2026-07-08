@@ -38,7 +38,8 @@ echo "$settings_json_destination"
 
 RAW_SETTINGS_URL="https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/main"
 
-# Download settings.json using curl or wget
+# Create the destination directory and download settings.json
+mkdir -p "$(dirname "$settings_json_destination")"
 if [ "$(command -v curl)" ]; then
   # Use curl if available
   curl -k "$RAW_SETTINGS_URL/settings.json" -o "$settings_json_destination"
