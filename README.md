@@ -40,8 +40,7 @@ irm https://raw.githubusercontent.com/chubbyhippo/vscode-settings/refs/heads/mai
    from WSL this also reaches the Windows editors):
 
    ```sh
-   git clone https://github.com/chubbyhippo/codemeow.git
-   cd codemeow && ./setup.sh
+   git clone --depth 1 https://github.com/chubbyhippo/codemeow.git && cd codemeow && ./setup.sh
    ```
 
 3. Restart the editor.
