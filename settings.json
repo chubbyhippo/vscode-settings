@@ -269,7 +269,6 @@
       "after": ["S", "`"]
     }
   ],
-  "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
   "workbench.activityBar.iconClickBehavior": "toggle",
   "workbench.activityBar.location": "top",
