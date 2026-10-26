@@ -8,9 +8,6 @@ code --force --install-extension GitHub.github-vscode-theme
 code --force --install-extension PKief.material-icon-theme
 # sonarqube
 code --force --install-extension SonarSource.sonarlint-vscode
-# git
-code --force --install-extension asispts.neo-git-graph
-code --force --install-extension eamodio.gitlens
 # numbered bookmark
 code --force --install-extension alefragnani.numbered-bookmarks
 # docker
