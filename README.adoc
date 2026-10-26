@@ -37,7 +37,7 @@ Invoke-RestMethod {raw_base_settings_url}/install-extensions.sh | Invoke-Express
 
 == Uninstall
 
-Removes settings.json, keybindings.json, and the default extensions installed above.
+Removes settings.json and keybindings.json.
 
 [source,shell,subs="attributes"]
 ----
