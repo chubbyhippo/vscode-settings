@@ -52,27 +52,3 @@ if [ -n "$keybindings_json_destination" ] && [ -f "$keybindings_json_destination
   rm -f "$keybindings_json_destination"
   echo "Removed $keybindings_json_destination"
 fi
-
-# Uninstall the default extensions installed by install-default-extensions.sh
-extensions="
-vscodevim.vim
-GitHub.github-vscode-theme
-PKief.material-icon-theme
-SonarSource.sonarlint-vscode
-asispts.neo-git-graph
-eamodio.gitlens
-alefragnani.numbered-bookmarks
-ms-azuretools.vscode-docker
-ms-vscode-remote.remote-wsl
-esbenp.prettier-vscode
-redhat.vscode-yaml
-redhat.vscode-xml
-mishkinf.goto-next-previous-member
-humao.rest-client
-asciidoctor.asciidoctor-vscode
-hverlin.mise-vscode
-"
-
-for extension in $extensions; do
-  code --uninstall-extension "$extension"
-done
