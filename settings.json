@@ -272,6 +272,5 @@
   "window.menuBarVisibility": "toggle",
   "workbench.activityBar.iconClickBehavior": "toggle",
   "workbench.activityBar.location": "top",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.renderIndentGuides": "onHover"
 }
