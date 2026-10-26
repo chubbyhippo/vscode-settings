@@ -35,6 +35,25 @@ curl {raw_base_settings_url}/install-default-extensions.sh | /usr/bin/env sh
 Invoke-RestMethod {raw_base_settings_url}/install-extensions.sh | Invoke-Expression
 ----
 
+== Uninstall
+
+Removes settings.json, keybindings.json, and the default extensions installed above.
+
+[source,shell,subs="attributes"]
+----
+curl {raw_base_settings_url}/uninstall.sh | /usr/bin/env sh
+----
+
+[source,shell,subs="attributes"]
+----
+wget -qO - {raw_base_settings_url}/uninstall.sh | /usr/bin/env sh
+----
+
+[source,powershell,subs="attributes"]
+----
+irm {raw_base_settings_url}/uninstall.ps1 | iex
+----
+
 == Uninstall extensions
 
 [source,shell]
